@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Flat platform
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -180
-    m_End: 180
+  - m_Start: -60
+    m_End: 74
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: 8007670341b0b4447a7b013f952e37eb, type: 3}
+  - m_Start: 74
+    m_End: 155
     m_Order: 0
     m_Sprites:
     - {fileID: 21300000, guid: 8007670341b0b4447a7b013f952e37eb, type: 3}
@@ -22,13 +27,13 @@ MonoBehaviour:
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 8007670341b0b4447a7b013f952e37eb, type: 3}
   - m_CornerType: 1
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 8007670341b0b4447a7b013f952e37eb, type: 3}
   - m_CornerType: 2
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 8007670341b0b4447a7b013f952e37eb, type: 3}
   - m_CornerType: 3
     m_Sprites:
     - {fileID: 0}
