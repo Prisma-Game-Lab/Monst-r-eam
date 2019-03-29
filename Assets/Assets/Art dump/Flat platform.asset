@@ -41,7 +41,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
   - m_CornerType: 3
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 37d9ddcfee1c539458cec2bd6603b279, type: 3}
   - m_CornerType: 4
     m_Sprites:
     - {fileID: 0}
