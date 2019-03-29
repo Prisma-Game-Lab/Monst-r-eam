@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/zteste/Teste.unity
+    guid: 0f4e2e16abb899e449e6c9da012fcb4c
+  - enabled: 1
+    path: Assets/zteste/vit.unity
+    guid: 38b39e9016c416142aeaf097b838a7ab
   m_configObjects: {}
