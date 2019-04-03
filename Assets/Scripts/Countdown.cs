@@ -9,11 +9,11 @@ public class Countdown : MonoBehaviour
 	private IEnumerator CountdownTimer()
 	{
 		yield return new WaitForSeconds(CountdownTime);
-		SceneManager.UnloadSceneAsync("Countdown");
+		SceneManager.UnloadSceneAsync("Countdown");	//Unload countdown scene
 	}
 
 	private void Start()
 	{
-		StartCoroutine("CountdownTimer");
+		StartCoroutine("CountdownTimer");	// Start scene countdown
 	}
 }
