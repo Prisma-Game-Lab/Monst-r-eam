@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d19e9afacee7848b47e36279ff7ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facingRight: 1
-  movementSpeed: 2
-  turnOnWallDetectionDistance: 0.5
+  facingRight: 0
+  movementSpeed: 3.5
+  turnOnWallDetectionDistance: 0.35
   smoothTime: 0.05
 --- !u!114 &1308579230
 MonoBehaviour:
@@ -148,4 +148,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71f3c9910e1e814b830b12e382dfc3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 600
+  jumpforce: 380
