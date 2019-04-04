@@ -44,4 +44,14 @@ public class ChangeScene : MonoBehaviour
 	{
 		SceneManager.LoadScene(SelectedLevel, LoadSceneMode.Single);
 	}
+
+    public void VitoryScene()
+    {
+        SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+    }
+
+    public void LoseScene()
+    {
+        SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
+    }
 }
