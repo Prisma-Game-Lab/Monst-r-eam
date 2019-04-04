@@ -265,216 +265,216 @@ MonoBehaviour:
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 6.5914216, y: 5.8674474, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 6.5492043, y: 1.5385488, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 2.9402347, y: 1.521572, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 2.9692798, y: 0.0224092, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 6.57636, y: 0.081023216, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 6.487942, y: -7.080036, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -0.019670963, y: -7.1523247, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: 0.1985488, y: 1.6715244, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -6.5254936, y: 1.6340975, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -6.403655, y: -0.1094569, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -0.1754775, y: -0.11262512, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -0.24065733, y: -5.410068, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -5.3643885, y: -5.3804975, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -5.3896136, y: -2.6657476, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -7.49436, y: -2.6327457, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -7.3582063, y: -7.079351, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -10.979043, y: -7.079176, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -10.894688, y: -3.748949, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -17.136576, y: -3.709989, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -17.261105, y: -0.08530748, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -13.395372, y: -0.09849095, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -13.378008, y: 1.5181736, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
     - position: {x: -17.205557, y: 1.5568565, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
+      height: 0.5
+      bevelCutoff: 180
+      bevelSize: 0.2
       spriteIndex: 0
       corner: 0
   m_SpriteShape: {fileID: 11400000, guid: deab89eca45d250429b9bf06f5dd0682, type: 2}
@@ -535,8 +535,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -5.3347054, y: -0.64242435, z: -0.012}
-    m_Extent: {x: 12.426104, y: 7.0098696, z: 0.012}
+    m_Center: {x: -5.3255825, y: -0.6392088, z: -0.024}
+    m_Extent: {x: 12.1606655, y: 6.7554455, z: 0.024}
 --- !u!4 &405188382
 Transform:
   m_ObjectHideFlags: 0
