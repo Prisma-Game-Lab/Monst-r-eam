@@ -754,6 +754,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: facingRight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
 --- !u!4 &1106375031 stripped
@@ -977,7 +982,7 @@ PrefabInstance:
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: facingRight
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
@@ -1040,29 +1045,29 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -15.96835, y: 4.41049}
+  - {x: -15.92051, y: 4.41049}
   - {x: -15.9205, y: 2.49152}
   - {x: -15.9205, y: 2.49152}
-  - {x: -21.31683, y: 2.55238}
-  - {x: -21.31683, y: 2.55238}
+  - {x: -21.31683, y: 2.49152}
+  - {x: -21.31683, y: 2.49152}
   - {x: -21.31683, y: 3.27808}
   - {x: -21.31683, y: 3.27808}
   - {x: -17.22842, y: 3.27808}
   - {x: -17.22842, y: 3.27808}
   - {x: -17.22842, y: 5.09908}
   - {x: -17.22842, y: 5.09908}
-  - {x: -3.2841, y: 5.09061}
-  - {x: -3.2841, y: 5.09061}
+  - {x: -3.2841, y: 5.09908}
+  - {x: -3.2841, y: 5.09908}
   - {x: -3.2841, y: 8.86286}
   - {x: -3.2841, y: 8.86286}
   - {x: -28.56437, y: 8.86067}
   - {x: -28.56437, y: 8.86067}
-  - {x: -28.56438, y: 0.24152}
-  - {x: -28.56438, y: 0.24152}
+  - {x: -28.56438, y: 0.31033}
+  - {x: -28.56438, y: 0.31033}
   - {x: -22.50948, y: 0.31033}
   - {x: -22.50948, y: 0.31033}
-  - {x: -22.44924, y: -0.50037}
-  - {x: -22.44924, y: -0.50037}
+  - {x: -22.50948, y: -0.50037}
+  - {x: -22.50948, y: -0.50037}
   - {x: -28.56437, y: -0.50037}
   - {x: -28.56437, y: -0.50037}
   - {x: -28.56437, y: -2.54459}
@@ -1079,11 +1084,11 @@ EdgeCollider2D:
   - {x: -8.60056, y: -0.4607}
   - {x: -8.60056, y: -2.54459}
   - {x: -8.60056, y: -2.54459}
-  - {x: -3.2841, y: -2.57101}
-  - {x: -3.2841, y: -2.57101}
-  - {x: -3.2841, y: 4.46738}
-  - {x: -3.2841, y: 4.46738}
-  - {x: -15.96835, y: 4.41049}
+  - {x: -3.2841, y: -2.54459}
+  - {x: -3.2841, y: -2.54459}
+  - {x: -3.2841, y: 4.41049}
+  - {x: -3.2841, y: 4.41049}
+  - {x: -15.92051, y: 4.41049}
 --- !u!114 &1239039632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1104,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -15.968351, y: 4.410499, z: 0}
+    - position: {x: -15.92051, y: 4.410499, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1117,7 +1122,7 @@ MonoBehaviour:
       bevelSize: 0.2
       spriteIndex: 0
       corner: 0
-    - position: {x: -21.31683, y: 2.55238, z: 0}
+    - position: {x: -21.31683, y: 2.491521, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1153,7 +1158,7 @@ MonoBehaviour:
       bevelSize: 0.2
       spriteIndex: 0
       corner: 0
-    - position: {x: -3.284106, y: 5.0906115, z: 0}
+    - position: {x: -3.284106, y: 5.099086, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1180,7 +1185,7 @@ MonoBehaviour:
       bevelSize: 0.2
       spriteIndex: 0
       corner: 0
-    - position: {x: -28.564384, y: 0.24152434, z: 0}
+    - position: {x: -28.564384, y: 0.310334, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1198,7 +1203,7 @@ MonoBehaviour:
       bevelSize: 0.2
       spriteIndex: 0
       corner: 0
-    - position: {x: -22.449242, y: -0.5003767, z: 0}
+    - position: {x: -22.50948, y: -0.5003767, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1279,7 +1284,7 @@ MonoBehaviour:
       bevelSize: 0.2
       spriteIndex: 0
       corner: 0
-    - position: {x: -3.2841058, y: -2.5710187, z: 0}
+    - position: {x: -3.2841058, y: -2.54459, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1288,7 +1293,7 @@ MonoBehaviour:
       bevelSize: 0.2
       spriteIndex: 0
       corner: 0
-    - position: {x: -3.2841058, y: 4.467383, z: 0}
+    - position: {x: -3.2841058, y: 4.410499, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1355,8 +1360,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -15.924237, y: 1.209722, z: -0.022000002}
-    m_Extent: {x: 12.891538, y: 7.904474, z: 0.022000002}
+    m_Center: {x: -15.924245, y: 1.209722, z: -0.022000002}
+    m_Extent: {x: 12.891545, y: 7.904474, z: 0.022000002}
 --- !u!1 &1284174257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,7 +1521,7 @@ PrefabInstance:
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: facingRight
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
