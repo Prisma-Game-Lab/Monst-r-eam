@@ -865,7 +865,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 6aa6b846eaad31541b6269e635499cfc, type: 3}
+  - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -875,8 +875,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -4.3173184, y: 2.925918, z: -0.0005}
-    m_Extent: {x: 2.9461813, y: 0.25000048, z: 0.0005}
+    m_Center: {x: -4.3823185, y: 2.925918, z: -0.0005}
+    m_Extent: {x: 3.0711818, y: 0.37750065, z: 0.0005}
 --- !u!1001 &699454650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -947,6 +947,47 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_Sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021,
+        type: 3}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.x
+      value: -9.10363
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.y
+      value: -7.0792656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Extent.x
+      value: 1.9354548
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Extent.y
+      value: 0.7550931
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1366,11 +1407,11 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.34193662, g: 0.4054756, b: 0.6415094, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 6aa6b846eaad31541b6269e635499cfc, type: 3}
+  - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1380,8 +1421,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -8.925622, y: 1.3031571, z: -0.014}
-    m_Extent: {x: 12.819388, y: 7.823839, z: 0.014}
+    m_Center: {x: -8.926222, y: 1.3031576, z: -0.014}
+    m_Extent: {x: 12.946081, y: 7.949932, z: 0.014}
 --- !u!68 &1118038671
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2141,7 +2182,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 6aa6b846eaad31541b6269e635499cfc, type: 3}
+  - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2151,5 +2192,5 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -5.385645, y: 2.925918, z: -0.0005}
-    m_Extent: {x: 1.8778552, y: 0.25000048, z: 0.0005}
+    m_Center: {x: -5.4506454, y: 2.9259179, z: -0.0005}
+    m_Extent: {x: 2.0028553, y: 0.37750077, z: 0.0005}
