@@ -118,7 +118,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.96, y: 6.6}
+  m_Size: {x: 2.6, y: 4.18}
   m_Direction: 0
 --- !u!114 &6536986572069004734
 MonoBehaviour:
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   movementSpeed: 3.5
-  turnOnWallDetectionDistance: 0.35
+  turnOnWallDetectionDistance: 0.5
   smoothTime: 0.05
 --- !u!114 &1308579230
 MonoBehaviour:
