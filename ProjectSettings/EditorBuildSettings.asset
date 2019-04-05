@@ -21,13 +21,13 @@ EditorBuildSettings:
     path: Assets/Scenes/00 - Final/Countdown.unity
     guid: a8b55b78ab4f61341ae3acbcd662d9cc
   - enabled: 1
-    path: Assets/Scenes/01 - Levels/Level1.unity
+    path: Assets/Scenes/01 - Levels/Level5.unity
     guid: 8a26c8768c60d2042adae8adbda4b418
   - enabled: 1
-    path: Assets/Scenes/01 - Levels/Level2.unity
+    path: Assets/Scenes/01 - Levels/Level0.unity
     guid: fab0c66c32f90f84b84a94ef3589422a
   - enabled: 1
-    path: Assets/Scenes/01 - Levels/Level3.3.unity
+    path: Assets/Scenes/01 - Levels/Level3.unity
     guid: 4c77bd72a9859014abcb373d1c363da8
   - enabled: 1
     path: Assets/Scenes/00 - Final/LoseScene.unity
