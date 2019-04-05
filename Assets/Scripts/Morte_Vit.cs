@@ -30,7 +30,7 @@ public class Morte_Vit : MonoBehaviour
             End(); // funcao que troca de cena
             Vitoria.WinCount = 0; // pra nao bugar
             Morte.DeathCount = 0; // pra nao bugar
-            PlayerInput.OnPress = null;
+            PlayerInput.Unregister();
         }
     }
     private void End()

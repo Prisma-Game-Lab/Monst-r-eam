@@ -54,4 +54,8 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
     }
+
+	public void UnregisterPlayerInput(){
+		PlayerInput.Unregister();
+	}
 }

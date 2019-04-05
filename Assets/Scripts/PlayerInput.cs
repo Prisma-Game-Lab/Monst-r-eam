@@ -79,4 +79,8 @@ public class PlayerInput : MonoBehaviour
     {
         return isPressed;
     }
+
+    public static void Unregister(){
+        OnPress = null;
+    }
 }
