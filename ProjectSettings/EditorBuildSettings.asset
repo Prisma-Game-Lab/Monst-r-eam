@@ -5,37 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/MainMenu.unity
     guid: a0c4097fde8042e46b3e4fdb5fc5e412
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/Settings.unity
     guid: 99c04709a7253fa40892286000b3ef1b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/LevelSelect.unity
     guid: 6831e32681a4e5e41836d9356dfa7bef
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/PauseMenu.unity
     guid: d3521a86299765149aeef853fef00bf2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/Countdown.unity
     guid: a8b55b78ab4f61341ae3acbcd662d9cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/01 - Levels/Level1.unity
     guid: 8a26c8768c60d2042adae8adbda4b418
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/01 - Levels/Level2.unity
     guid: fab0c66c32f90f84b84a94ef3589422a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/01 - Levels/Level3.3.unity
     guid: 4c77bd72a9859014abcb373d1c363da8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/LoseScene.unity
     guid: 244f68b1113c0f04fadf0a6c8d947be3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/VictoryScene.unity
     guid: 702613229f94fd941b27948ec5ff02b3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/00 - Final/Credits.unity
     guid: ba3d6d57c80768d4cb5c6363707c333a
+  - enabled: 1
+    path: Assets/Scenes/game.unity
+    guid: d07c7a2171841a7408b4473c02607231
   m_configObjects: {}

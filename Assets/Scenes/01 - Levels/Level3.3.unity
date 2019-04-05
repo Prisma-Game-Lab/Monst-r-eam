@@ -410,11 +410,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: movementSpeed
@@ -424,6 +419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: facingRight
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
@@ -1408,12 +1408,12 @@ PrefabInstance:
         type: 3}
       propertyPath: Lemmings.Array.data[0]
       value: 
-      objectReference: {fileID: 797170527}
+      objectReference: {fileID: 737266242}
     - target: {fileID: 1242427595575785362, guid: 9148ab4ad95bf8e4791d3fec57e810c9,
         type: 3}
       propertyPath: Lemmings.Array.data[1]
       value: 
-      objectReference: {fileID: 737266242}
+      objectReference: {fileID: 797170527}
     - target: {fileID: 1242427595575785362, guid: 9148ab4ad95bf8e4791d3fec57e810c9,
         type: 3}
       propertyPath: Lemmings.Array.data[2]
@@ -1606,11 +1606,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: movementSpeed
@@ -1620,6 +1615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: facingRight
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
