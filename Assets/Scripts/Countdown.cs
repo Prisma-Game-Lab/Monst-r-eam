@@ -8,7 +8,9 @@ public class Countdown : MonoBehaviour
 
 	private IEnumerator CountdownTimer()
 	{
-		yield return new WaitForSeconds(CountdownTime);
+		Time.timeScale = 0;
+		yield return new WaitForSecondsRealtime(CountdownTime);
+		Time.timeScale = 1;
 		SceneManager.UnloadSceneAsync("Countdown");	//Unload countdown scene
 	}
 
