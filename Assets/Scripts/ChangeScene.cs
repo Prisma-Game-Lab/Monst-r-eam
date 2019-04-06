@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
 	[HideInInspector]
-	public string SelectedLevel;
+	public static string SelectedLevel;
 
 
 	public void ToNextScene(string sceneName)		// Used when loading single scene (i.e. next fase)
@@ -37,11 +37,13 @@ public class ChangeScene : MonoBehaviour
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 		SelectedLevel = sceneName;
-		SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
+        Debug.Log("Nome: " + SelectedLevel);
+        SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
 	}
 
 	public void ToPlayAgain()		// Used for the play again button
 	{
+        Debug.Log("Nome: " +SelectedLevel);
 		SceneManager.LoadScene(SelectedLevel, LoadSceneMode.Single);
 	}
 
