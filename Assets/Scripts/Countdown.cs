@@ -2,6 +2,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * 
+ * Script for the countdown before the game play
+ * 
+ * Author: Hugo Tonette
+ * 
+ */
+
 public class Countdown : MonoBehaviour
 {
 	[Range(0, 100)] public float CountdownTime = 2;

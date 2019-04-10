@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * 
+ * Script for loading scenes.
+ * 
+ * Author: Hugo Tonette
+ * 
+ */
+
 public class ChangeScene : MonoBehaviour
 {
 	[HideInInspector]
