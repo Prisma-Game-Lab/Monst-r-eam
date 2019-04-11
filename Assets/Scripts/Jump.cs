@@ -22,7 +22,7 @@ public class Jump : MonoBehaviour
         //adds try to jump function to press callback
         //function TryToJump will be called every time "button is pressed", for all platforms
         PlayerInput.OnPress += TryToJump;
-        Debug.Log("Jumps" + PlayerInput.OnPress.GetInvocationList().GetLength(0));
+        //Debug.Log("Jumps" + PlayerInput.OnPress.GetInvocationList().GetLength(0));
     }
 
     // Update is called once per frame

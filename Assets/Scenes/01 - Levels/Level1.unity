@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1020,12 +1020,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.628
       objectReference: {fileID: 0}
-    - target: {fileID: 6719070480872859877, guid: d70721dbe40be3f41b2822fc747a7df7,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 53d9453a0953afb4085b2009df3ad4f6,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 6719070480872859878, guid: d70721dbe40be3f41b2822fc747a7df7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d70721dbe40be3f41b2822fc747a7df7, type: 3}
@@ -1035,28 +1029,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1335421046}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1335421048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6719070480872859879, guid: d70721dbe40be3f41b2822fc747a7df7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1335421046}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &1335421049
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335421048}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.8750845, y: -0.029448114}
-  m_Size: {x: 1.6919261, y: 3.7093103}
-  m_Direction: 0
 --- !u!1 &1377039434
 GameObject:
   m_ObjectHideFlags: 0
