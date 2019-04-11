@@ -12,11 +12,12 @@ public class Vitoria : MonoBehaviour
 
     public static int WinCount = 0;
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player")
         {
-            collision.gameObject.SetActive(false);
+            //queremos destruir ou só desativar?
+            collider.gameObject.SetActive(false);
             WinCount++;
             Debug.Log("Ganhei");
         }
