@@ -12,6 +12,8 @@ public class Jump : MonoBehaviour
 
     private float FloorDetectionRayDistance = 0.05f;
 
+    public AudioSource tempJumpSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,7 @@ public class Jump : MonoBehaviour
         {
             //estamos usando add force, por hora. Por enquanto tem ido bem 
             rd.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Force);
+            if(tempJumpSound) tempJumpSound.Play();
         }
     }
 }
