@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.IO;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -7,16 +9,24 @@ using System.Linq;
  * 
  * Script to contabilize the points in the games levels.
  * 
- * Author: Hugo Tonette
+ * Author: Hugo Tonette, André Mazal Krauss
  * 
  */
 
-public class PointSystem : MonoBehaviour
+ //uma dúvida para o Hugo: fases não cumpridas, devem ser armazenadas com 0 estrelas?
+ //ou só deixar "não preenchido" basta? Me é estranho isso
+[Serializable]
+public class PointSystem
 {
+	
 	[HideInInspector]
 	public List<PointsClass> PointsList = new List<PointsClass>();      // Here to save the points in each level
 
-
+	public PointSystem()
+	{
+		PointsList = new List<PointsClass>();
+	}
+	
 	// This function Adds a level or Update an existing one
 	public void AddUpdateLevel(string newLevelName, int newLevelPoint)
 	{
@@ -65,4 +75,5 @@ public class PointSystem : MonoBehaviour
 	{
 		return PointsList.First(s => s.LevelName == LevelNameCheck).LevelPoints;
 	}
+
 }

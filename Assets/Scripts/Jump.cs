@@ -12,6 +12,8 @@ public class Jump : MonoBehaviour
 
     private float FloorDetectionRayDistance = 0.05f;
 
+    public AudioSource tempJumpSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +39,6 @@ public class Jump : MonoBehaviour
         //faz raycasting pra checar se o lemming pode pular
         //TO-DO: implementar delayzinho
 
-        Debug.Log("hererer");
-
         int layerMask = LayerMask.GetMask("Default");
         float collsize = (coll2d.size.y / 2) * transform.lossyScale.y;
         Vector3 rayStartingPosition = new Vector3(transform.position.x, transform.position.y - collsize, transform.position.z);
@@ -47,6 +47,7 @@ public class Jump : MonoBehaviour
         {
             //estamos usando add force, por hora. Por enquanto tem ido bem 
             rd.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Force);
+            if(tempJumpSound) tempJumpSound.Play();
         }
     }
 }
