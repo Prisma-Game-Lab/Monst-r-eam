@@ -28,6 +28,12 @@ public class PlayerInput : MonoBehaviour
     //informa se está rolando (algum) press
     private static bool isPressed = false;
 
+    void Awake()
+    {
+        if(OnPress == null) OnPress = delegate { };
+        if(OnRelease == null) OnRelease = delegate { };
+        
+    }
     void Start()
     {
         isPressed = false;

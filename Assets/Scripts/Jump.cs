@@ -37,8 +37,6 @@ public class Jump : MonoBehaviour
         //faz raycasting pra checar se o lemming pode pular
         //TO-DO: implementar delayzinho
 
-        Debug.Log("hererer");
-
         int layerMask = LayerMask.GetMask("Default");
         float collsize = (coll2d.size.y / 2) * transform.lossyScale.y;
         Vector3 rayStartingPosition = new Vector3(transform.position.x, transform.position.y - collsize, transform.position.z);
