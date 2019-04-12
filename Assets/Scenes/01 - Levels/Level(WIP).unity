@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -987,7 +987,8 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 6aa6b846eaad31541b6269e635499cfc, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -997,8 +998,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -20.006994, y: 1.0957797, z: -0.025500001}
-    m_Extent: {x: 13.208376, y: 8.364301, z: 0.025500001}
+    m_Center: {x: -19.823502, y: 0.9084356, z: -0.009000001}
+    m_Extent: {x: 13.145519, y: 8.310493, z: 0.009000001}
 --- !u!1 &1140601687
 GameObject:
   m_ObjectHideFlags: 0
