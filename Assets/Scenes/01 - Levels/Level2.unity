@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -340,15 +340,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: movementSpeed
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
@@ -642,28 +642,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
+      propertyPath: m_Sprites.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: -9.063249
+      value: -9.1282425
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.y
-      value: -7.098011
+      value: -7.0974245
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 1.8134625
+      value: 1.6816428
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 0.7713101
+      value: 0.015211344
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
@@ -674,8 +679,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_Color.r
@@ -689,6 +693,22 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_Sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021,
+        type: 3}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: b4ff8124732cb3647b61100721d0c915,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Extent.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: b4ff8124732cb3647b61100721d0c915,
@@ -859,15 +879,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: movementSpeed
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
@@ -1302,15 +1322,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004734, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: movementSpeed
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
@@ -1392,7 +1412,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1895,6 +1915,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
+  - {fileID: 0}
   - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
   - {fileID: 0}
   - {fileID: 0}
@@ -1905,8 +1926,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -20.149784, y: 1.2226231, z: -0.014}
-    m_Extent: {x: 13.193161, y: 8.1800995, z: 0.014}
+    m_Center: {x: -19.961617, y: 1.0417984, z: -0.006}
+    m_Extent: {x: 13.004993, y: 7.9992743, z: 0.006}
 --- !u!1 &1934078572
 GameObject:
   m_ObjectHideFlags: 0
