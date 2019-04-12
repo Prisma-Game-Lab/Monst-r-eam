@@ -13,16 +13,11 @@ MonoBehaviour:
   m_Name: New SpriteShapeProfile
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -94
+  - m_Start: -325
     m_End: 35
     m_Order: 7
     m_Sprites:
     - {fileID: 21300000, guid: 2a28522e61e81894b817fb150b981021, type: 3}
-  - m_Start: 35
-    m_End: 266
-    m_Order: 0
-    m_Sprites:
-    - {fileID: 0}
   m_FillTexture: {fileID: 0}
   m_CornerSprites:
   - m_CornerType: 0
