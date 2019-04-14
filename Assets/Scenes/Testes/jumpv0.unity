@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpforce: 380
-  FloorDetectionRayDistance: 0.05
+  FloorDetectionRayDistance: 0.4
   tempJumpSound: {fileID: 1634844113}
 --- !u!1 &707998122
 GameObject:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpforce: 380
-  FloorDetectionRayDistance: 0.05
+  FloorDetectionRayDistance: 0.4
   tempJumpSound: {fileID: 0}
 --- !u!1 &938525263
 GameObject:
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpforce: 380
-  FloorDetectionRayDistance: 0.5
+  FloorDetectionRayDistance: 0.4
   tempJumpSound: {fileID: 0}
 --- !u!1 &1377039434
 GameObject:

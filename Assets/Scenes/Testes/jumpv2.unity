@@ -2583,12 +2583,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb166d072f5eb2245b2b225dd86d16fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxJumpHeight: 6
+  AdjustableJumpHeight: 6
   MinJumpHeight: 4
   MinHoldTime: 0
   MaxHoldTime: 1
-  acceleratedFall: 0
-  fallMultiplier: 7
+  acceleratedFall: 1
+  fallMultiplier: 4
   FloorDetectionRayDistance: 0.5
 --- !u!70 &6536986572743483152
 CapsuleCollider2D:
@@ -2740,12 +2740,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb166d072f5eb2245b2b225dd86d16fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxJumpHeight: 6
+  AdjustableJumpHeight: 6
   MinJumpHeight: 4
   MinHoldTime: 0
   MaxHoldTime: 1
-  acceleratedFall: 0
-  fallMultiplier: 7
+  acceleratedFall: 1
+  fallMultiplier: 4
   FloorDetectionRayDistance: 0.5
 --- !u!4 &6536986573074166820
 Transform:
@@ -2897,12 +2897,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb166d072f5eb2245b2b225dd86d16fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxJumpHeight: 6
+  AdjustableJumpHeight: 6
   MinJumpHeight: 4
   MinHoldTime: 0
   MaxHoldTime: 1
-  acceleratedFall: 0
-  fallMultiplier: 7
+  acceleratedFall: 1
+  fallMultiplier: 4
   FloorDetectionRayDistance: 0.5
 --- !u!1001 &7281934779243210515
 PrefabInstance:

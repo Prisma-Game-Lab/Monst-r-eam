@@ -21,6 +21,8 @@ public class BetterJump_B : MonoBehaviour
 
     private bool shouldTryToJump = false;
 
+    private bool WantsToJump = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,14 +39,16 @@ public class BetterJump_B : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerInput.IsPressed())
-        {
-            TryToJump();
-        }
+        WantsToJump = PlayerInput.IsPressed();
     }
 
     void FixedUpdate()
     {
+        if(WantsToJump)
+        {
+            TryToJump();
+        }
+        
         //https://www.youtube.com/watch?v=7KiK0Aqtmzc
          //aumenta velocidade de queda, como no script lá
          if(rb.velocity.y <= 0.0f)

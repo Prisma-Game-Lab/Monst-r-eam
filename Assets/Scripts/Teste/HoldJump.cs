@@ -7,7 +7,7 @@ public class HoldJump : MonoBehaviour
    
     [Header("Valores de ajuste para um pulo que depende do tempo que o player segura o botão")]
     [Tooltip("A altura maxima do pulo")]
-    public float MaxJumpHeight = 10.0f;
+    public float AdjustableJumpHeight = 10.0f;
     [Tooltip("A altura base mínima do pulo. Mesmo o menor pulo vai atingir essa altura")]
     public float MinJumpHeight = 4.0f;
     [Tooltip("O tempo mínimo que o jogador deve segurar o botão para registrar um pulo")]
@@ -77,7 +77,7 @@ public class HoldJump : MonoBehaviour
             float jumpMultiplier = Mathf.Lerp(0.0f, 1.0f, Mathf.Clamp(holdDuration, MinHoldTime, MaxHoldTime));
 
             //pula de acordo com esse valor
-            rb.velocity = new Vector2(rb.velocity.x, MinJumpHeight + jumpMultiplier * MaxJumpHeight);
+            rb.velocity = new Vector2(rb.velocity.x, MinJumpHeight + jumpMultiplier * AdjustableJumpHeight);
 
         }
     }
