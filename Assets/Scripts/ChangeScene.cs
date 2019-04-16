@@ -14,24 +14,40 @@ public class ChangeScene : MonoBehaviour
 	[HideInInspector]
 	public static string SelectedLevel;
 
+	public GameObject PauseMenuGO;
+	public GameObject GameUIGO;
 
-	public void ToNextScene(string sceneName)		// Used when loading single scene (i.e. next fase)
+	public void ToNextScene(string sceneName)       // Used when loading single scene (i.e. next fase)
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 	}
 
-	public void ToPauseMenu()		//Used to load pause menu ONLY
+	public void ToPauseMenu()       //Used to load pause menu ONLY
 	{
-		SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+		if (PauseMenuGO != null && GameUIGO != null)
+		{
+			PauseMenuGO.SetActive(true);
+			GameUIGO.SetActive(false);
+			Time.timeScale = 0;
+		}
+		else
+			Debug.Log("PauseMenu and/or GameUI not present");
+		
 	}
 
-	public void ExitPauseMenu()		//To unload pause menu ONLY
+	public void ExitPauseMenu()     //To unload pause menu ONLY
 	{
-		SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
-		SceneManager.UnloadSceneAsync("PauseMenu");
+		if (PauseMenuGO != null && GameUIGO != null)
+		{
+			PauseMenuGO.SetActive(false);
+			GameUIGO.SetActive(true);
+			Time.timeScale = 1f;
+		}
+		else
+			Debug.Log("PauseMenu and/or GameUI not present");
 	}
 
-	public void ToAdditiveScene(string sceneName)		//To load other additive scenes, except pause (i.e. Settings)
+	public void ToAdditiveScene(string sceneName)       //To load other additive scenes, except pause (i.e. Settings)
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
 	}
@@ -41,31 +57,37 @@ public class ChangeScene : MonoBehaviour
 		SceneManager.UnloadSceneAsync(sceneName);
 	}
 
-	public void ToGame(string sceneName)		// Used to initiate the game with the countdown scene together
+	public void ToGame(string sceneName)        // Used to initiate the game with the countdown scene together
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 		SelectedLevel = sceneName;
-        Debug.Log("Nome: " + SelectedLevel);
-        SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
+		Debug.Log("Nome: " + SelectedLevel);
+		SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
 	}
 
-	public void ToPlayAgain()		// Used for the play again button
+	public void ToPlayAgain()       // Used for the play again button
 	{
-        Debug.Log("Nome: " +SelectedLevel);
+		Debug.Log("Nome: " + SelectedLevel);
 		SceneManager.LoadScene(SelectedLevel, LoadSceneMode.Single);
 	}
 
-    public void VitoryScene()
-    {
-        SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
-    }
+	public void VitoryScene()
+	{
+		SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+	}
 
-    public void LoseScene()
-    {
-        SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
-    }
+	public void LoseScene()
+	{
+		SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
+	}
 
-	public void UnregisterPlayerInput(){
+	public void UnregisterPlayerInput()
+	{
 		PlayerInput.Unregister();
+	}
+
+	public void ToReloadScene()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 }

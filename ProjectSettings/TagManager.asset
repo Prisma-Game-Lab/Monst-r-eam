@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Morte
   - Vitoria
+  - PauseMenu
   layers:
   - Default
   - TransparentFX
