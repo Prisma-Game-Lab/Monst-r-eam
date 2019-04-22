@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6719070480872859876}
   - component: {fileID: 6719070480872859877}
-  - component: {fileID: 6719070480872859878}
   - component: {fileID: 6719070480872859883}
-  m_Layer: 0
+  - component: {fileID: 6334225644972760851}
+  m_Layer: 10
   m_Name: Saida
   m_TagString: Vitoria
   m_Icon: {fileID: 0}
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6719070480872859879}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.36, y: 2.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.475, y: 2.355, z: 0}
+  m_LocalScale: {x: 2.665, y: 2.665, z: 2.665}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 772a39aae7df487419db5511b3e0bb14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6aa6b846eaad31541b6269e635499cfc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fcc464647c775f428a17155973e2afb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -81,22 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6719070480872859878
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6719070480872859879}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &6719070480872859883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,3 +93,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c088c0c743fc4f418baaa8fe7f464be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &6334225644972760851
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6719070480872859879}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.4265354, y: -0.6039445}
+  m_Size: {x: 0.34257483, y: 2.1589303}
+  m_Direction: 0

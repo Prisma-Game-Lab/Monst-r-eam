@@ -28,6 +28,12 @@ public class PlayerInput : MonoBehaviour
     //informa se está rolando (algum) press
     private static bool isPressed = false;
 
+    void Awake()
+    {
+        if(OnPress == null) OnPress = delegate { };
+        if(OnRelease == null) OnRelease = delegate { };
+        
+    }
     void Start()
     {
         isPressed = false;
@@ -50,7 +56,7 @@ public class PlayerInput : MonoBehaviour
 
         if(Input.GetButtonUp("Jump"))
         {
-            isPressed = true;
+            isPressed = false;
             OnRelease(Time.time - PressTime);
         }
         #endif
@@ -68,19 +74,19 @@ public class PlayerInput : MonoBehaviour
             }
             else if(Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled))
             {
-                isPressed = true;
+                isPressed = false;
                 OnRelease(Time.time - PressTime);
             }
 
         #endif
     }
 
-    static bool IsPressed()
+    public static bool IsPressed()
     {
         return isPressed;
     }
 
     public static void Unregister(){
-        OnPress = null;
+        OnPress = delegate {};
     }
 }
