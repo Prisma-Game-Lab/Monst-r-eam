@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(HorizontalMovement))]
 public class Jump : MonoBehaviour
 {
 
     private Rigidbody2D rd;
     private CapsuleCollider2D coll2d;
+    private HorizontalMovement hm;
 
     public float jumpforce = 600f;
+
+    [Range(0.0f,90.0f)]
+    [Tooltip("O angulo que determina o quanto o bixin pula pra frente num pulo. Medido a partir do eixo y, ou seja: 0 é puramente pra cima, 90 é puramente pra frente")]
+    public float ForwardAngulation = 0.0f;
 
     public float FloorDetectionRayDistance = 0.05f;
 
@@ -20,6 +27,8 @@ public class Jump : MonoBehaviour
         rd = GetComponent<Rigidbody2D>();
         //capsule collider?
         coll2d = GetComponent<CapsuleCollider2D>();
+        hm = GetComponent<HorizontalMovement>();
+        
 
         //adds try to jump function to press callback
         //function TryToJump will be called every time "button is pressed", for all platforms
@@ -45,8 +54,16 @@ public class Jump : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(rayStartingPosition, Vector2.down, FloorDetectionRayDistance, layerMask);
         if((rd.velocity.y <= 0.1f ) && hit.collider != null)
         {
-            //estamos usando add force, por hora. Por enquanto tem ido bem 
-            rd.AddForce(new Vector2(0f, jumpforce), ForceMode2D.Force);
+            //o ângulo em radianos
+            float angle = ForwardAngulation * Mathf.Deg2Rad;
+            Debug.Log(angle);
+            
+            //estamos usando add force, por hora. Por enquanto tem ido bem
+            //usa angulação para direcionar o pulo mais pra frente
+            //precisa saber pra qual lado estamos andando!
+            float fx = hm.facingRight ? jumpforce * Mathf.Sin(angle) : jumpforce * -Mathf.Sin(angle);
+            float fy = jumpforce * Mathf.Cos(angle);
+            rd.AddForce(new Vector2(fx, fy), ForceMode2D.Force);
             if(tempJumpSound) tempJumpSound.Play();
         }
     }
