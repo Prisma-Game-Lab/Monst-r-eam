@@ -16,6 +16,8 @@ public class ChangeScene : MonoBehaviour
 
 	public GameObject PauseMenuGO;
 	public GameObject GameUIGO;
+	public GameObject VictoryGO;
+	public GameObject LoseGO;
 
 	public void ToNextScene(string sceneName)       // Used when loading single scene (i.e. next fase)
 	{
@@ -67,18 +69,32 @@ public class ChangeScene : MonoBehaviour
 
 	public void ToPlayAgain()       // Used for the play again button
 	{
-		Debug.Log("Nome: " + SelectedLevel);
-		SceneManager.LoadScene(SelectedLevel, LoadSceneMode.Single);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
 	}
 
-	public void VitoryScene()
+	public void VictoryScreen()
 	{
-		SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+		if (VictoryGO != null)
+		{
+			VictoryGO.SetActive(true);
+		}
+		else
+			Debug.Log("VictoryGO not present");
 	}
 
-	public void LoseScene()
+	public void LoseScreen()
 	{
-		SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
+		if (LoseGO != null)
+		{
+			LoseGO.SetActive(true);
+		}
+		else
+			Debug.Log("VictoryGO not present");
+	}
+
+	public void ToNextLevel()
+	{
+		// WIP
 	}
 
 	public void UnregisterPlayerInput()
