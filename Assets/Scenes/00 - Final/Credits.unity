@@ -192,7 +192,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1035923095}
-        m_MethodName: ToNextScene
+        m_MethodName: ToLoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -451,6 +451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fd12c617454be46b85f383c6084fed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenuGO: {fileID: 0}
+  GameUIGO: {fileID: 0}
+  VictoryGO: {fileID: 0}
+  LoseGO: {fileID: 0}
 --- !u!4 &1035923096
 Transform:
   m_ObjectHideFlags: 0

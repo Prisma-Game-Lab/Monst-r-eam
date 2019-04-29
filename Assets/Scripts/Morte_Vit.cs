@@ -37,11 +37,11 @@ public class Morte_Vit : MonoBehaviour
     {
         if(Vitoria.WinCount > 0)
         {
-            SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+			GameObject.Find("UIprefab").GetComponent<ChangeScene>().VictoryScreen();
         }
         else
         {
-            SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
-        }
+			GameObject.Find("UIprefab").GetComponent<ChangeScene>().LoseScreen();
+		}
     }
 }
