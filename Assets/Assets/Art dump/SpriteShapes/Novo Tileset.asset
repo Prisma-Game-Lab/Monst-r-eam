@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Novo Tileset
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -45
+  - m_Start: -39
     m_End: 45
     m_Order: 0
     m_Sprites:
     - {fileID: 21300002, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
   - m_Start: -136
-    m_End: -45
+    m_End: -39
     m_Order: 0
     m_Sprites:
     - {fileID: 21300002, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
@@ -33,7 +33,7 @@ MonoBehaviour:
     m_Order: 0
     m_Sprites:
     - {fileID: 21300002, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
-  m_FillTexture: {fileID: 0}
+  m_FillTexture: {fileID: 2800000, guid: 250b5653a6072ed4db13c9fd89765352, type: 3}
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
@@ -55,13 +55,13 @@ MonoBehaviour:
     - {fileID: 21300008, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
   - m_CornerType: 6
     m_Sprites:
-    - {fileID: 21300008, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
+    - {fileID: 21300012, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
   - m_CornerType: 7
     m_Sprites:
-    - {fileID: 21300016, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
-  m_FillPixelPerUnit: 100
+    - {fileID: 21300002, guid: ddc222da0cd2fe04ab6d5e5f4db0087e, type: 3}
+  m_FillPixelPerUnit: 12.9
   m_BevelSize: 0
   m_BevelCutoff: 0
-  m_FillOffset: 0
-  m_WorldSpaceUV: 0
+  m_FillOffset: -0.087
+  m_WorldSpaceUV: 1
   m_UseSpriteBorders: 1
