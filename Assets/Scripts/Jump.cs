@@ -10,6 +10,7 @@ public class Jump : MonoBehaviour
     private Rigidbody2D rd;
     private CapsuleCollider2D coll2d;
     private HorizontalMovement hm;
+    private Animator anim;
 
     public float jumpforce = 600f;
 
@@ -28,6 +29,7 @@ public class Jump : MonoBehaviour
         //capsule collider?
         coll2d = GetComponent<CapsuleCollider2D>();
         hm = GetComponent<HorizontalMovement>();
+        anim = GetComponent<Animator>();
         
 
         //adds try to jump function to press callback
@@ -40,7 +42,8 @@ public class Jump : MonoBehaviour
     void Update()
     {
         
-        //esses dois ifs vão ser unificados assim que o Krauss fizer a classe PlayerInput
+        //seta pra true se bixin está caindo, false cc
+        anim.SetBool("Fall", rd.velocity.y <= -0.1f);
     }
 
     private void TryToJump()
@@ -56,7 +59,6 @@ public class Jump : MonoBehaviour
         {
             //o ângulo em radianos
             float angle = ForwardAngulation * Mathf.Deg2Rad;
-            Debug.Log(angle);
             
             //estamos usando add force, por hora. Por enquanto tem ido bem
             //usa angulação para direcionar o pulo mais pra frente
@@ -64,6 +66,11 @@ public class Jump : MonoBehaviour
             float fx = hm.facingRight ? jumpforce * Mathf.Sin(angle) : jumpforce * -Mathf.Sin(angle);
             float fy = jumpforce * Mathf.Cos(angle);
             rd.AddForce(new Vector2(fx, fy), ForceMode2D.Force);
+
+            //seta anim do pul0
+            anim.SetBool("Fall", false);
+            anim.SetBool("Jump", true);
+
             if(tempJumpSound) tempJumpSound.Play();
         }
     }

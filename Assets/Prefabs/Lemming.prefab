@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6536986572069004735}
   - component: {fileID: 6536986572069004734}
   - component: {fileID: 1308579230}
+  - component: {fileID: 9060445379567816263}
   m_Layer: 9
   m_Name: Lemming
   m_TagString: Player
@@ -155,6 +156,25 @@ MonoBehaviour:
   ForwardAngulation: 0
   FloorDetectionRayDistance: 0.05
   tempJumpSound: {fileID: 0}
+--- !u!95 &9060445379567816263
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536986572069004722}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5373b7eb9c4a9944f8bb03326eef1d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5326746490371865971
 PrefabInstance:
   m_ObjectHideFlags: 0

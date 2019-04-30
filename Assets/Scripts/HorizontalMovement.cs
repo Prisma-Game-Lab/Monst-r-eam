@@ -18,6 +18,8 @@ public class HorizontalMovement : MonoBehaviour
     private Rigidbody2D rb;
     private CapsuleCollider2D coll2d;
 
+    private Animator anim;
+
     [Tooltip("Determina para qual lado começa o movimento")]
     public bool facingRight = true;
     [Tooltip("Determina a velocidade de movimento")]
@@ -39,6 +41,7 @@ public class HorizontalMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //capsule collider?
         coll2d = GetComponent<CapsuleCollider2D>();
+        anim = GetComponent<Animator>();
 
        
         if(facingRight)
@@ -98,6 +101,8 @@ public class HorizontalMovement : MonoBehaviour
         facingRight = !facingRight;
 
         //truquezinho pra fazer o sprite virar pro outro lado
+        //como alinhar isso com a animação? Vai precisar ainda?
+        anim.SetBool("Rotate", true);
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
