@@ -14,6 +14,7 @@ public class Morte_Vit : MonoBehaviour
     */
 
     public GameObject[] Lemmings;
+    public ChangeStars cs;
     private int Count;
 
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class Morte_Vit : MonoBehaviour
     {
         if(Count == (Vitoria.WinCount + Morte.DeathCount)) // Compara com o numero de vitorias e derrotas
         {
+            //cs.CheckStars();
             End(); // funcao que troca de cena
             Vitoria.WinCount = 0; // pra nao bugar
             Morte.DeathCount = 0; // pra nao bugar
