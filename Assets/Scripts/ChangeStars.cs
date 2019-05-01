@@ -18,24 +18,7 @@ public class ChangeStars : MonoBehaviour
             {
                 if(!Lbutton.Completed) // Se ele nunca foi completado antes
                 {
-                    if(Vitoria.WinCount == 1)
-                    {
-                        Lbutton.Star1.SetActive(true);
-                        Lbutton.CountStars = 1;
-                    }
-                    if (Vitoria.WinCount == 2)
-                    {
-                        Lbutton.Star1.SetActive(true);
-                        Lbutton.Star2.SetActive(true);
-                        Lbutton.CountStars = 2;
-                    }
-                    if (Vitoria.WinCount == 3)
-                    {
-                        Lbutton.Star1.SetActive(true);
-                        Lbutton.Star2.SetActive(true);
-                        Lbutton.Star3.SetActive(true);
-                        Lbutton.CountStars = 3;
-                    }
+                    Lbutton.CountStars = Vitoria.WinCount;
                     Lbutton.Completed = true;
                 }
                 else

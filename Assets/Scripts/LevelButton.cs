@@ -13,6 +13,25 @@ public class LevelButton : MonoBehaviour
     public bool CurrentLevel;
     public int CountStars;
 
+
+    private void Start()
+    {
+        if(CountStars == 1)
+        {
+            Star1.SetActive(true);
+        }
+        if (CountStars == 2)
+        {
+            Star1.SetActive(true);
+            Star2.SetActive(true);
+        }
+        if (CountStars == 3)
+        {
+            Star1.SetActive(true);
+            Star2.SetActive(true);
+            Star3.SetActive(true);
+        }
+    }
     public void CurrentLevelOn(string name)
     {
        
