@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Lemming2
+  m_Controller: {fileID: 9100000, guid: 5373b7eb9c4a9944f8bb03326eef1d40, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 13f51aa0721c7ad41b9f36b56bca3ce4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f3ed4817da6e44f43b6b46f4952b4765, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7eb1725a015bdf14c9413d790fd4cff5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 645aa57c1f90f564ba3cdc9303abe537, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 528a606aa5e863c40b3d2e3a7904087e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3a0a634b3d84c214d92882a52960365f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 22a84fb2949294d4186c500a461e724e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 76a2dfeab7b33854e96b48435f0ca8c9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1d833d8f10e0e2d4db708b42bb5c6daa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e050258a7810a874887eb93fcac5a4b2, type: 2}
