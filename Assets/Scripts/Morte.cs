@@ -15,6 +15,9 @@ public class Morte : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            var pd = collision.gameObject.GetComponent<PlayerDeath>();
+            if(pd != null) pd.KillPlayer();
+
             collision.gameObject.SetActive(false);
             DeathCount++;
             Debug.Log("Perdi");

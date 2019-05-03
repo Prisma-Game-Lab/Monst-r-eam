@@ -16,14 +16,20 @@ autores: André Mazal Krauss,
 public class HorizontalMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    //private Collider2D collider;
+    private CapsuleCollider2D coll2d;
+
+    private Animator anim;
 
     [Tooltip("Determina para qual lado começa o movimento")]
     public bool facingRight = true;
     [Tooltip("Determina a velocidade de movimento")]
     public float movementSpeed;
+    [Tooltip("Determina se o bixin, enquanto estiver no ar, deve \"quicar\" elasticamente na parede, ou bater de cara nela e parar")]
+    public bool ShouldBounceOnWallWhileAirborne;
     [Tooltip("A distância da parede em que o lemming vira para o outro lado")]
     public float turnOnWallDetectionDistance;
+
+    public float FloorDetectionRayDistance = 0.05f;
 
     public float smoothTime = .05f;
 
@@ -33,7 +39,11 @@ public class HorizontalMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        //capsule collider?
+        coll2d = GetComponent<CapsuleCollider2D>();
+        anim = GetComponent<Animator>();
 
+       
         if(facingRight)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
@@ -52,19 +62,35 @@ public class HorizontalMovement : MonoBehaviour
         //o brackeys faz algo parecido nesse script:
         //https://github.com/Brackeys/2D-Character-Controller/blob/master/CharacterController2D.cs
 
-        // Move the character by finding the target velocity
-        //para direito caso facing right, senão para esquerda (= direita * -1)
-        int dir = facingRight ? 1 : -1;
-        Vector2 targetVelocity = new Vector2(movementSpeed * dir, rb.velocity.y);
-        // And then smoothing it out and applying it to the character
-        rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref m_velocity, smoothTime);
 
-        //faz um raycast na direção do movimento e vê se precisa virar de direção
+        int dir = facingRight ? 1 : -1;
+
+        //só seta movimentação lateral se estiver tocando no chão:
+        //cheque com raycast pra ver se está grounded. Não me parece pesado demais para estar no update, o que acham? (Krauss)
+        //pensei agora: será que basta checar se minha velocidade vertical é != 0? Tão simples, tão elegante!
         int layerMask = LayerMask.GetMask("Default");
-        
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir * Vector2.right, turnOnWallDetectionDistance, layerMask);
+        float collsize = (coll2d.size.y / 2) * transform.lossyScale.y;
+        Vector3 rayStartingPosition = new Vector3(transform.position.x, transform.position.y - collsize, transform.position.z);
+        RaycastHit2D hit = Physics2D.Raycast(rayStartingPosition, Vector2.down, FloorDetectionRayDistance, layerMask);
+
         if(hit.collider != null)
         {
+            // Move the character by finding the target velocity
+            //para direito caso facing right, senão para esquerda (= direita * -1)
+            Vector2 targetVelocity = new Vector2(movementSpeed * dir, rb.velocity.y);
+            // And then smoothing it out and applying it to the character
+            rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref m_velocity, smoothTime);
+
+        }
+        //faz um raycast na direção do movimento e vê se precisa virar de direção
+        
+        RaycastHit2D hit_h = Physics2D.Raycast(transform.position, dir * Vector2.right, turnOnWallDetectionDistance, layerMask);
+        if(hit_h.collider != null)
+        {
+            if(ShouldBounceOnWallWhileAirborne)
+            {
+                rb.velocity = new Vector2( -rb.velocity.x, rb.velocity.y);
+            }
             Flip();
         }
             
@@ -75,6 +101,8 @@ public class HorizontalMovement : MonoBehaviour
         facingRight = !facingRight;
 
         //truquezinho pra fazer o sprite virar pro outro lado
+        //como alinhar isso com a animação? Vai precisar ainda?
+        anim.SetBool("Rotate", true);
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 

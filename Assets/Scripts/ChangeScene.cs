@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
@@ -14,10 +15,15 @@ public class ChangeScene : MonoBehaviour
 	[HideInInspector]
 	public static string SelectedLevel;
 
+	public int MaxLevelPerBlock = 6;
+
+	[Space]
 	public GameObject PauseMenuGO;
 	public GameObject GameUIGO;
+	public GameObject VictoryGO;
+	public GameObject LoseGO;
 
-	public void ToNextScene(string sceneName)       // Used when loading single scene (i.e. next fase)
+	public void ToLoadScene(string sceneName)       // Used when loading single scene (i.e. next fase)
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 	}
@@ -32,7 +38,7 @@ public class ChangeScene : MonoBehaviour
 		}
 		else
 			Debug.Log("PauseMenu and/or GameUI not present");
-		
+
 	}
 
 	public void ExitPauseMenu()     //To unload pause menu ONLY
@@ -67,18 +73,43 @@ public class ChangeScene : MonoBehaviour
 
 	public void ToPlayAgain()       // Used for the play again button
 	{
-		Debug.Log("Nome: " + SelectedLevel);
-		SceneManager.LoadScene(SelectedLevel, LoadSceneMode.Single);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
 	}
 
-	public void VitoryScene()
+	public void VictoryScreen()
 	{
-		SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+		if (VictoryGO != null)
+		{
+			VictoryGO.SetActive(true);
+		}
+		else
+			Debug.Log("VictoryGO not present");
 	}
 
-	public void LoseScene()
+	public void LoseScreen()
 	{
-		SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
+		if (LoseGO != null)
+		{
+			LoseGO.SetActive(true);
+		}
+		else
+			Debug.Log("VictoryGO not present");
+	}
+
+	public void ToNextLevel()
+	{
+		string sTemp = SceneManager.GetActiveScene().name;
+		string sChar = sTemp.Substring(sTemp.Length - 1);
+
+		string sRest = sTemp.Remove(sTemp.Length - 1);
+		int tempLvl = 0;
+		Int32.TryParse(sChar, out tempLvl);
+
+		tempLvl++;
+		if (tempLvl > MaxLevelPerBlock)
+			SceneManager.LoadScene("LevelSelect");
+		else
+			SceneManager.LoadScene(sRest + tempLvl.ToString());
 	}
 
 	public void UnregisterPlayerInput()
