@@ -26,7 +26,9 @@ public class ChangeScene : MonoBehaviour
 	public void ToLoadScene(string sceneName)       // Used when loading single scene (i.e. next fase)
 	{
 		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-	}
+        Vitoria.WinCount = 0; 
+        Morte.DeathCount = 0; 
+    }
 
 	public void ToPauseMenu()       //Used to load pause menu ONLY
 	{
