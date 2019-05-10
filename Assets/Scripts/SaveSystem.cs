@@ -12,15 +12,20 @@ using UnityEngine;
  */
 public class SaveSystem : MonoBehaviour
 {
+    [HideInInspector] //deve ficar escondido, só tiro enquanto programo, se eu esquecer podem por de volta pfv
     public PointSystem pointSystem;
     public PointSystem emptySave;
     
     public string saveFileName = "save";
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         
         //tenta loadar
         if(!LoadState())
