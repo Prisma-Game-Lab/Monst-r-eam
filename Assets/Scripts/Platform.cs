@@ -67,4 +67,9 @@ public class Platform : MonoBehaviour
             }
         }
     }
+
+    void OnDrawGizmos(){
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, distancia * Vector3.up);
+    }
 }
