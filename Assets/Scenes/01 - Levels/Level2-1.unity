@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,6 +266,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Name
+      value: Point Light (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.28964078
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.23843002
+      objectReference: {fileID: 0}
     - target: {fileID: 5513349769665967049, guid: 0089742b781776945920b8fb6b900bde,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,10 +341,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0089742b781776945920b8fb6b900bde, type: 3}
+--- !u!1001 &136801081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
     - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
         type: 3}
       propertyPath: m_Name
-      value: Point Light (3)
+      value: Point Light (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
         type: 3}
@@ -341,15 +370,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.23843002
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0089742b781776945920b8fb6b900bde, type: 3}
---- !u!1001 &136801081
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
     - target: {fileID: 5513349769665967049, guid: 0089742b781776945920b8fb6b900bde,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -404,26 +424,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Name
-      value: Point Light (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.28964078
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.23843002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0089742b781776945920b8fb6b900bde, type: 3}
@@ -869,6 +869,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Name
+      value: Point Light (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.28964078
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.23843002
+      objectReference: {fileID: 0}
     - target: {fileID: 5513349769665967049, guid: 0089742b781776945920b8fb6b900bde,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -923,26 +943,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Name
-      value: Point Light (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.28964078
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.23843002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0089742b781776945920b8fb6b900bde, type: 3}
@@ -3038,6 +3038,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Name
+      value: Point Light (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.28964078
+      objectReference: {fileID: 0}
+    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.23843002
+      objectReference: {fileID: 0}
     - target: {fileID: 5513349769665967049, guid: 0089742b781776945920b8fb6b900bde,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3092,26 +3112,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967051, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Name
-      value: Point Light (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8867924
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.28964078
-      objectReference: {fileID: 0}
-    - target: {fileID: 5513349769665967050, guid: 0089742b781776945920b8fb6b900bde,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.23843002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0089742b781776945920b8fb6b900bde, type: 3}
