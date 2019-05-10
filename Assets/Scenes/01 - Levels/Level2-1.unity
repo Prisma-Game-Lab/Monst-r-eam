@@ -233,8 +233,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
-  - {fileID: 21300000, guid: 9f5bbaa7ada4f6943803da1a49f82660, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
@@ -244,8 +243,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0.52965605, y: 0, z: -0.0005}
-    m_Extent: {x: 2.8996563, y: 0.72, z: 0.0005}
+    m_Center: {x: 0.4746561, y: 0, z: 0}
+    m_Extent: {x: 2.474656, y: 0, z: 0}
 --- !u!4 &51060475
 Transform:
   m_ObjectHideFlags: 0
@@ -674,8 +673,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
-  - {fileID: 21300000, guid: 9f5bbaa7ada4f6943803da1a49f82660, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
@@ -685,8 +683,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   m_LocalAABB:
-    m_Center: {x: -0.43547857, y: -0.12645936, z: -0.0005}
-    m_Extent: {x: 1.8712343, y: 0.72, z: 0.0005}
+    m_Center: {x: -0.49047852, y: -0.12645933, z: 0}
+    m_Extent: {x: 1.4462342, y: 0, z: 0}
 --- !u!4 &216727676
 Transform:
   m_ObjectHideFlags: 0
@@ -799,6 +797,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004721, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: m_Offset.y
@@ -817,11 +820,6 @@ PrefabInstance:
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
       value: 380
-      objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004721, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
@@ -1439,7 +1437,7 @@ PrefabInstance:
     - target: {fileID: 1188961184702045496, guid: 04e4781721ef2214e838ef7f34b480a0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1188961184702045496, guid: 04e4781721ef2214e838ef7f34b480a0,
         type: 3}
@@ -2592,6 +2590,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6536986572069004721, guid: a76f7505ac9731c459ac9acbd360336c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004735, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: m_Offset.y
@@ -2610,11 +2613,6 @@ PrefabInstance:
     - target: {fileID: 1308579230, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
       propertyPath: jumpforce
       value: 380
-      objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004721, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
@@ -2732,26 +2730,26 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 14.74438, y: -2.08695}
-  - {x: 14.75703, y: -1.26987}
-  - {x: 15.18334, y: -0.85019}
-  - {x: 20.31055, y: -0.8512}
-  - {x: 20.27736, y: 4.38842}
-  - {x: 13.46838, y: 4.38767}
-  - {x: 13.05125, y: 4.76499}
-  - {x: 12.94683, y: 5.80573}
-  - {x: 13.37497, y: 6.2849}
-  - {x: 20.33018, y: 6.37092}
-  - {x: 20.34241, y: 11.09542}
-  - {x: -1.60824, y: 10.92919}
-  - {x: -1.46729, y: 0.90342}
-  - {x: 5.80878, y: 0.86698}
-  - {x: 6.23017, y: 0.45957}
-  - {x: 6.27635, y: -0.73248}
-  - {x: 12.79575, y: -0.83979}
-  - {x: 13.21383, y: -1.2596}
-  - {x: 13.22422, y: -2.10146}
-  - {x: 14.74438, y: -2.08695}
+  - {x: 14.73327, y: -1.14863}
+  - {x: 15.1609, y: -0.72101}
+  - {x: 20.3152, y: -0.72101}
+  - {x: 20.3152, y: 4.3885}
+  - {x: 13.43017, y: 4.3885}
+  - {x: 13.00255, y: 4.81611}
+  - {x: 13.00252, y: 5.95224}
+  - {x: 13.43015, y: 6.37987}
+  - {x: 20.3152, y: 6.37987}
+  - {x: 20.3152, y: 11.10098}
+  - {x: -1.6185, y: 11.10098}
+  - {x: -1.6185, y: 0.86846}
+  - {x: 5.84768, y: 0.86846}
+  - {x: 6.2753, y: 0.44083}
+  - {x: 6.27529, y: -0.72101}
+  - {x: 12.78991, y: -0.72101}
+  - {x: 13.21754, y: -1.14863}
+  - {x: 13.21755, y: -2.08013}
+  - {x: 14.73326, y: -2.08013}
+  - {x: 14.73327, y: -1.14863}
 --- !u!114 &1710248393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2767,7 +2765,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -2.348503, y: 11.653612, z: 0}
+    - position: {x: -2.348503, y: 11.83098, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2776,7 +2774,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -2.187152, y: 0.17702794, z: 0}
+    - position: {x: -2.348503, y: 0.138468, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2785,7 +2783,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 5.512068, y: 0.13846803, z: 0}
+    - position: {x: 5.5453, y: 0.13846803, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2794,7 +2792,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 5.573641, y: -1.4510145, z: 0}
+    - position: {x: 5.5452995, y: -1.4510145, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2803,7 +2801,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 12.487545, y: -1.564827, z: 0}
+    - position: {x: 12.487545, y: -1.451015, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2812,7 +2810,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 12.503267, y: -2.8383775, z: 0}
+    - position: {x: 12.48755, y: -2.810137, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2830,7 +2828,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 15.482317, y: -1.5802579, z: 0}
+    - position: {x: 15.46327, y: -1.451015, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2839,7 +2837,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 21.045197, y: -1.5813465, z: 0}
+    - position: {x: 21.0452, y: -1.451015, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2848,7 +2846,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 21.002762, y: 5.1185083, z: 0}
+    - position: {x: 21.0452, y: 5.1185083, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2857,7 +2855,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 13.749538, y: 5.117702, z: 0}
+    - position: {x: 13.73254, y: 5.118508, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2866,7 +2864,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 13.705269, y: 5.5589347, z: 0}
+    - position: {x: 13.732538, y: 5.649872, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2875,7 +2873,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 21.058323, y: 5.649872, z: 0}
+    - position: {x: 21.0452, y: 5.649872, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2884,7 +2882,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: 21.074324, y: 11.830984, z: 0}
+    - position: {x: 21.0452, y: 11.830984, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -2941,8 +2939,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
-  - {fileID: 21300000, guid: 9f5bbaa7ada4f6943803da1a49f82660, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
@@ -2952,8 +2949,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   - {fileID: 21300000, guid: ff5ba4dc7dcdebd4d832cae31fbbd199, type: 3}
   m_LocalAABB:
-    m_Center: {x: 9.360966, y: 4.495944, z: -0.007}
-    m_Extent: {x: 12.434599, y: 8.057821, z: 0.007}
+    m_Center: {x: 9.348349, y: 4.5104237, z: 0}
+    m_Extent: {x: 11.696852, y: 7.3205605, z: 0}
 --- !u!4 &1710248395
 Transform:
   m_ObjectHideFlags: 0
