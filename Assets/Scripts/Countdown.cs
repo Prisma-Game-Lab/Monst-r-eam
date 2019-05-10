@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /*
  * 
@@ -14,6 +15,9 @@ public class Countdown : MonoBehaviour
 {
 	[Range(0, 100)] public float CountdownTime = 2;
 
+	[SerializeField]
+	private Text CounterText;
+
 	private IEnumerator CountdownTimer()
 	{
 		Time.timeScale = 0;
@@ -25,5 +29,13 @@ public class Countdown : MonoBehaviour
 	private void Start()
 	{
 		StartCoroutine("CountdownTimer");	// Start scene countdown
+	}
+
+	private void Update()
+	{
+		int counter = 3;
+
+		counter -= Mathf.RoundToInt(Time.deltaTime);
+		CounterText.text = counter.ToString();
 	}
 }
