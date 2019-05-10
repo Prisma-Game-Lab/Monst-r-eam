@@ -13,67 +13,74 @@ using System.Linq;
  * 
  */
 
+//um hackzinho para o Unity serializar listas de listas
+[System.Serializable]
+ public class ListWrapper
+ {
+    public List<PointsClass> myList;
+
+	// Define the indexer to allow client code to use [] notation.
+	public PointsClass this[int i]
+	{
+		get { return myList[i]; }
+		set { myList[i] = value; }
+	}
+ }
+
  //uma dúvida para o Hugo: fases não cumpridas, devem ser armazenadas com 0 estrelas?
  //ou só deixar "não preenchido" basta? Me é estranho isso
 [Serializable]
-public class PointSystem
+[CreateAssetMenu]
+public class PointSystem : ScriptableObject 
 {
 	
-	[HideInInspector]
-	public List<PointsClass> PointsList = new List<PointsClass>();      // Here to save the points in each level
+	//uma lista de listas, para podermos indexar por página e por level
+	[Header("Uma lista de lista, indexada por página e por numero do level")]
+	public List<ListWrapper> PointsList;
 
-	public PointSystem()
-	{
-		PointsList = new List<PointsClass>();
-	}
-	
 	// This function Adds a level or Update an existing one
-	public void AddUpdateLevel(string newLevelName, int newLevelPoint)
+	public void UpdateLevel(int levelPage, int levelNumber, int newLevelPoint, bool newLevelCleared)
 	{
 		// Check if the points are correct
 		if (!(newLevelPoint < 0 || newLevelPoint > 3))
 		{
 			// Checks if the list is empty
-			if (PointsList.Count == 0)
+			Debug.Assert(PointsList != null && PointsList.Count != 0);
+					
+			// try to Update item
+			if(PointsList[levelPage] != null && PointsList[levelPage][levelNumber] != null)
 			{
-				//If empty, create a new item in the list
-				PointsList.Add(new PointsClass(newLevelName, newLevelPoint));
+				
+				PointsList[levelPage][levelNumber].cleared = newLevelCleared;
+				PointsList[levelPage][levelNumber].LevelPoints = newLevelCleared ? newLevelPoint : 0;
 			}
 			else
 			{
-				// Discover if item with specific name exists.
-				PointsClass result = PointsList.First(s => s.LevelName == newLevelName);
-
-				if(result == null)
-				{
-					// Add new item
-					PointsList.Add(new PointsClass(newLevelName, newLevelPoint));
-				}
-				else
-				{
-					// Update item
-					int index = PointsList.FindIndex(0, s => s.LevelName == newLevelName);
-					PointsList[index].LevelName = newLevelName;
-					PointsList[index].LevelPoints = newLevelPoint;
-				}
+				Debug.LogWarning("Alter points failed. Invalid indexes for page and/or level");
 			}
+						
 		}
 		else
 		{
-			Debug.Log("Save Failed: Wrong number of points. Points must be limited to 0 to 3 points.");
+			Debug.LogWarning("Save Failed: Wrong number of points. Points must be limited to 0 to 3 points.");
 		}
 	}
 
-	// This function clears the list, in case theres an option to reset game
-	public void ClearRecords()
-	{
-		PointsList.Clear();
-	}
 
-	// This function checks to see the points of said level
-	public int CheckList (string LevelNameCheck)
+	// This function gets the points of said level
+	public int GetLevelPoints (int levelPage, int levelNumber)
 	{
-		return PointsList.First(s => s.LevelName == LevelNameCheck).LevelPoints;
+		if(PointsList[levelPage] != null && PointsList[levelPage][levelNumber] != null)
+		{
+				
+			return PointsList[levelPage][levelNumber].LevelPoints;
+				
+		}
+		else
+		{
+			Debug.LogWarning("Get points failed: Invalid indexes for page and/or level");
+			return 0;
+		}
 	}
 
 }

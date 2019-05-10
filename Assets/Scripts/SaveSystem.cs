@@ -12,19 +12,21 @@ using UnityEngine;
  */
 public class SaveSystem : MonoBehaviour
 {
-    //[HideInInspector]
     public PointSystem pointSystem;
+    public PointSystem emptySave;
     
     public string saveFileName = "save";
 
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
+        
         //tenta loadar
         if(!LoadState())
         {
             //se falhou, instancia novo save e o salva
-            pointSystem = new PointSystem();
+            pointSystem = GameObject.Instantiate(emptySave);
             SaveState();
             string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
             Debug.Log("new save on path:" + path);
@@ -54,6 +56,7 @@ public class SaveSystem : MonoBehaviour
 		}
         using (StreamReader streamReader = File.OpenText (path))
         {
+            pointSystem = ScriptableObject.CreateInstance<PointSystem>();
             string jsonString = streamReader.ReadToEnd ();
             JsonUtility.FromJsonOverwrite(jsonString, pointSystem);
         }
@@ -62,7 +65,13 @@ public class SaveSystem : MonoBehaviour
 
     public void ClearState()
     {
-        pointSystem.ClearRecords(); 
+        pointSystem = GameObject.Instantiate(emptySave); 
+    }
+
+    //ao sair do jogo, salvar estado
+    void OnApplicationQuit()
+    {
+        SaveState();
     }
 
 }
