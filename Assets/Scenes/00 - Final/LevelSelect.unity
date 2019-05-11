@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -353,9 +353,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748230101}
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 130414248}
+        m_MethodName: ToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -777,9 +777,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748230101}
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 130414248}
+        m_MethodName: ToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1169,9 +1169,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748230101}
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 130414248}
+        m_MethodName: ToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2139,9 +2139,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748230101}
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 130414248}
+        m_MethodName: ToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2323,7 +2323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32.45, y: -60.3}
+  m_AnchoredPosition: {x: 32.44995, y: -60.3}
   m_SizeDelta: {x: 88, y: 266.3}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1236109193
@@ -3494,9 +3494,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748230101}
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 130414248}
+        m_MethodName: ToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3823,9 +3823,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748230101}
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 130414248}
+        m_MethodName: ToGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3909,7 +3909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 32.450012, y: -29.8}
+  m_AnchoredPosition: {x: 32.44995, y: -29.799988}
   m_SizeDelta: {x: 88, y: 87.5}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1953407124
