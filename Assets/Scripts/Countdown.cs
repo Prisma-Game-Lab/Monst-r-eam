@@ -16,7 +16,9 @@ public class Countdown : MonoBehaviour
 	[Range(0, 100)] public float CountdownTime = 2;
 
 	[SerializeField]
-	private Text CounterText;
+	private Text CountdownText;
+
+	private float _timeLeft = 4.0f;
 
 	private IEnumerator CountdownTimer()
 	{
@@ -33,9 +35,7 @@ public class Countdown : MonoBehaviour
 
 	private void Update()
 	{
-		int counter = 3;
-
-		counter -= Mathf.RoundToInt(Time.deltaTime);
-		CounterText.text = counter.ToString();
+		_timeLeft -= Time.unscaledDeltaTime;
+		CountdownText.text = Mathf.Round(_timeLeft).ToString();
 	}
 }

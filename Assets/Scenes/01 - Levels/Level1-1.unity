@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -559,7 +559,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-  m_SpriteShape: {fileID: 11400000, guid: bd15e56491a0dac4390dd95d7d9bbd17, type: 2}
+  m_SpriteShape: {fileID: 0}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_UpdateCollider: 0
@@ -606,19 +606,10 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites:
-  - {fileID: 21300000, guid: 51b325d967575eb48b2d3ba9d8125164, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: -2.197912, y: 0.020759046, z: -0.0005}
-    m_Extent: {x: 4.2058973, y: 1.6356056, z: 0.0005}
+    m_Center: {x: -2.197912, y: 0.020759106, z: 0}
+    m_Extent: {x: 4.197912, y: 0.020759106, z: 0}
 --- !u!4 &707998125
 Transform:
   m_ObjectHideFlags: 0
@@ -763,7 +754,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-  m_SpriteShape: {fileID: 11400000, guid: bd15e56491a0dac4390dd95d7d9bbd17, type: 2}
+  m_SpriteShape: {fileID: 0}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_UpdateCollider: 0
@@ -810,19 +801,10 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites:
-  - {fileID: 21300000, guid: 51b325d967575eb48b2d3ba9d8125164, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 4.5079837, y: 0.17788768, z: -0.0005}
-    m_Extent: {x: 6.4209867, y: 1.6175604, z: 0.0005}
+    m_Center: {x: 4.5079837, y: 0.17788768, z: 0}
+    m_Extent: {x: 6.4203086, y: 0.0026943684, z: 0}
 --- !u!4 &783690580
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,8 +1340,8 @@ SpriteShapeRenderer:
   - {fileID: 21300016, guid: 44676f10276e6c449bc6e754cdbf637d, type: 3}
   - {fileID: 21300018, guid: 44676f10276e6c449bc6e754cdbf637d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 9.764175, y: 9.286623, z: -0.0050000004}
-    m_Extent: {x: 13.445082, y: 8.873682, z: 0.0050000004}
+    m_Center: {x: 9.764176, y: 9.286624, z: -0.0050000004}
+    m_Extent: {x: 13.428767, y: 8.8573675, z: 0.0050000004}
 --- !u!4 &1442942919
 Transform:
   m_ObjectHideFlags: 0
