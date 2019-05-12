@@ -131,13 +131,13 @@ TextureImporter:
       name: tileset_final_pb_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1893
-        width: 306
-        height: 305
+        x: 45
+        y: 1894
+        width: 299
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -151,13 +151,13 @@ TextureImporter:
       name: tileset_final_pb_1
       rect:
         serializedVersion: 2
-        x: 387
+        x: 389
         y: 1892
-        width: 305
-        height: 306
+        width: 302
+        height: 303
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -171,13 +171,13 @@ TextureImporter:
       name: tileset_final_pb_2
       rect:
         serializedVersion: 2
-        x: 732
-        y: 1890
-        width: 308
-        height: 308
+        x: 736
+        y: 1893
+        width: 302
+        height: 303
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -191,13 +191,13 @@ TextureImporter:
       name: tileset_final_pb_3
       rect:
         serializedVersion: 2
-        x: 1164
-        y: 1890
-        width: 307
-        height: 308
+        x: 1167
+        y: 1894
+        width: 301
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 3, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -211,13 +211,13 @@ TextureImporter:
       name: tileset_final_pb_4
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 1890
-        width: 307
-        height: 308
+        x: 1510
+        y: 1894
+        width: 302
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 3, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -231,13 +231,13 @@ TextureImporter:
       name: tileset_final_pb_5
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1543
-        width: 308
-        height: 305
+        x: 42
+        y: 1547
+        width: 303
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 3, z: 2, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -272,12 +272,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 735
-        y: 1542
-        width: 305
-        height: 308
+        y: 1546
+        width: 303
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 2, z: 0, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -291,13 +291,13 @@ TextureImporter:
       name: tileset_final_pb_8
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 1544
-        width: 309
-        height: 307
+        x: 1167
+        y: 1546
+        width: 301
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -311,13 +311,13 @@ TextureImporter:
       name: tileset_final_pb_9
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 1544
-        width: 308
-        height: 307
+        x: 1511
+        y: 1546
+        width: 301
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 3, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -332,12 +332,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 39
-        y: 1197
-        width: 307
-        height: 308
+        y: 1199
+        width: 304
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 2, w: 3}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -351,13 +351,13 @@ TextureImporter:
       name: tileset_final_pb_11
       rect:
         serializedVersion: 2
-        x: 385
-        y: 1197
-        width: 308
-        height: 309
+        x: 389
+        y: 1199
+        width: 300
+        height: 303
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 2, w: 4}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -371,13 +371,13 @@ TextureImporter:
       name: tileset_final_pb_12
       rect:
         serializedVersion: 2
-        x: 732
-        y: 1197
-        width: 308
-        height: 308
+        x: 736
+        y: 1199
+        width: 302
+        height: 302
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 0, z: 0, w: 3}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
