@@ -18,8 +18,24 @@ public class SaveSystem : MonoBehaviour
     
     public string saveFileName = "save";
 
+    private static SaveSystem instance;
+    public static GetInstace()
+    {
+        return instance;
+    }
+
     void Awake()
     {
+        if(instance != null)
+        {
+            //não pode haver 2 desse script em cena
+            GameObject.Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+        
         DontDestroyOnLoad(this.gameObject);
     }
     
