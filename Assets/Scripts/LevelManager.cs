@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         
+        //To-do: fazer voltar para mesma página que o player estava jogando
         ButtonPrevious.SetActive(false);
         //ButtonsLevels = GameObject.FindGameObjectsWithTag("ButtonLevel");
         foreach(GameObject page in pagesContainers)

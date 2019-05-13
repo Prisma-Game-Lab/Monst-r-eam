@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8436354009346265409}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 305.5, y: 268, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointSystem: {fileID: 0}
-  emptySave: {fileID: 11400000, guid: 49985a6b59d6dcd478d896d9a9e1af99, type: 2}
+  emptySave: {fileID: 11400000, guid: 8dbeb0aa36ccf3b4096484d966e6c746, type: 2}
   saveFileName: save
+  currLevelPage: 0
+  currLevelNumber: 0

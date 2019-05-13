@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 /*
  * 
@@ -16,10 +17,21 @@ public class SaveSystem : MonoBehaviour
     public PointSystem pointSystem;
     public PointSystem emptySave;
     
-    public string saveFileName = "save";
+    private static string saveFileName = "save";
+    private static string SavePath
+    {
+        get
+        {
+            return Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
+        }
+    }
+
+    //usado para, a todo momento, saber o último level que foi jogado, ou está sendo jogado
+    public int currLevelPage;
+    public int currLevelNumber;
 
     private static SaveSystem instance;
-    public static GetInstace()
+    public static SaveSystem GetInstance()
     {
         return instance;
     }
@@ -29,11 +41,20 @@ public class SaveSystem : MonoBehaviour
         if(instance != null)
         {
             //não pode haver 2 desse script em cena
-            GameObject.Destroy(this);
+            GameObject.Destroy(this.gameObject);
         }
         else
         {
             instance = this;
+            //tenta loadar
+            if(!LoadState())
+            {
+                //se falhou, instancia novo save e o salva
+                pointSystem = GameObject.Instantiate(emptySave);
+                SaveState();
+                string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
+                Debug.Log("new save on path:" + path);
+            }        
         }
         
         DontDestroyOnLoad(this.gameObject);
@@ -42,17 +63,6 @@ public class SaveSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        //tenta loadar
-        if(!LoadState())
-        {
-            //se falhou, instancia novo save e o salva
-            pointSystem = GameObject.Instantiate(emptySave);
-            SaveState();
-            string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
-            Debug.Log("new save on path:" + path);
-        }
-        
         
     }
 
@@ -84,9 +94,21 @@ public class SaveSystem : MonoBehaviour
         return true;
     }
 
+    //função helper pra setar score do level corrente. Só pra evitar gets/sets bobos
+    public void SetScoreForCurrentLevel(int stars, bool cleared)
+    {
+        pointSystem.UpdateLevel(currLevelPage, currLevelNumber, stars, cleared);
+    }
+
     public void ClearState()
     {
         pointSystem = GameObject.Instantiate(emptySave); 
+    }
+
+    [MenuItem("OurGame/CleanSave")]
+    static void DeleteSaveFile()
+    {
+       File.Delete(SavePath);
     }
 
     //ao sair do jogo, salvar estado

@@ -14,39 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PointsList:
   - myList:
-    - LevelName: 
-      SceneName: 
-      LevelPoints: 0
+    - levelPoints: 0
       levelPage: 0
       levelNumber: 0
       cleared: 0
-    - LevelName: 
-      SceneName: 
-      LevelPoints: 0
+    - levelPoints: 0
       levelPage: 0
       levelNumber: 1
       cleared: 0
-    - LevelName: 
-      SceneName: 
-      LevelPoints: 0
+    - levelPoints: 0
       levelPage: 0
       levelNumber: 2
       cleared: 0
-    - LevelName: 
-      SceneName: 
-      LevelPoints: 0
+    - levelPoints: 0
       levelPage: 0
       levelNumber: 3
       cleared: 0
-    - LevelName: 
-      SceneName: 
-      LevelPoints: 0
+    - levelPoints: 0
       levelPage: 0
       levelNumber: 4
       cleared: 0
-    - LevelName: 
-      SceneName: 
-      LevelPoints: 0
+    - levelPoints: 0
       levelPage: 0
       levelNumber: 5
       cleared: 0

@@ -42,6 +42,12 @@ public class PointSystem : ScriptableObject
 	public void UpdateLevel(int levelPage, int levelNumber, int newLevelPoint, bool newLevelCleared)
 	{
 		// Check if the points are correct
+		int currPoints = GetLevelPoints(levelPage, levelNumber);
+		if(newLevelPoint <= currPoints)
+		{
+			return;
+		}
+
 		if (!(newLevelPoint < 0 || newLevelPoint > 3))
 		{
 			// Checks if the list is empty
@@ -80,6 +86,31 @@ public class PointSystem : ScriptableObject
 		{
 			Debug.LogWarning("Get points failed: Invalid indexes for page and/or level");
 			return 0;
+		}
+	}
+
+	
+	public PointsClass GetLevelInfo (int levelPage, int levelNumber)
+	{
+		try
+		{
+		
+			if(PointsList[levelPage] != null && PointsList[levelPage][levelNumber] != null)
+			{
+					
+				return PointsList[levelPage][levelNumber];
+					
+			}
+			else
+			{
+				Debug.LogWarning("Get points failed: Invalid indexes for page and/or level");
+				return null;
+			}
+		}
+		catch(ArgumentOutOfRangeException)
+		{
+			Debug.LogWarning("Get points failed: Invalid indexes for page and/or level");
+			return null;
 		}
 	}
 

@@ -100,6 +100,8 @@ public class ChangeScene : MonoBehaviour
 
 	public void ToNextLevel()
 	{
+		//gente, que perigo essa função, mas a vida é pra viver perigosamente
+
 		string sTemp = SceneManager.GetActiveScene().name;
 		string sChar = sTemp.Substring(sTemp.Length - 1);
 
@@ -109,9 +111,14 @@ public class ChangeScene : MonoBehaviour
 
 		tempLvl++;
 		if (tempLvl > MaxLevelPerBlock)
+		{
 			SceneManager.LoadScene("LevelSelect");
+		}
 		else
+		{
+			SaveSystem.GetInstance().currLevelNumber++;
 			SceneManager.LoadScene(sRest + tempLvl.ToString());
+		}
 	}
 
 	public void UnregisterPlayerInput()
