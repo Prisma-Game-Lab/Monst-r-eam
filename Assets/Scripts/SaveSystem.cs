@@ -54,6 +54,9 @@ public class SaveSystem : MonoBehaviour
                 SaveState();
                 string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
                 Debug.Log("new save on path:" + path);
+
+                currLevelPage = 0;
+                currLevelNumber = 0;
             }        
         }
         

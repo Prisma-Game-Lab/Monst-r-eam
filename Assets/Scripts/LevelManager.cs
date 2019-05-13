@@ -16,17 +16,29 @@ public class LevelManager : MonoBehaviour
     {
         
         //To-do: fazer voltar para mesma página que o player estava jogando
-        ButtonPrevious.SetActive(false);
-        //ButtonsLevels = GameObject.FindGameObjectsWithTag("ButtonLevel");
-        foreach(GameObject page in pagesContainers)
+        currentPage = SaveSystem.GetInstance().currLevelPage;
+        //desliga todos, menos a página corrente, que deve ficar ligada
+        for(int i = 0; i < pagesContainers.Count; i++)
         {
-            page.SetActive(false);
+            pagesContainers[i].SetActive(i == currentPage);
         }
-        if(pagesContainers.Count > 0)
+
+        //ajusta os botões pra frente e pra trás, vendo se estamos na última página ou não
+        if(currentPage == 0)
         {
-            pagesContainers[0].SetActive(true);
-            currentPage = 0;
-        } 
+            ButtonNext.SetActive(true);
+            ButtonPrevious.SetActive(false);
+        }
+        else if(currentPage == pagesContainers.Count - 1)
+        {
+            ButtonNext.SetActive(false);
+            ButtonPrevious.SetActive(true);
+        }
+        else
+        {
+            ButtonNext.SetActive(true);
+            ButtonPrevious.SetActive(true);
+        }
         
     }
 
