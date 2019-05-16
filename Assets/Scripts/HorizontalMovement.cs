@@ -93,6 +93,10 @@ public class HorizontalMovement : MonoBehaviour
             }
             Flip();
         }
+        else if(rb.velocity.x * (facingRight? 1 : -1) < 0)
+        {
+            Flip();
+        }
             
     }
 
