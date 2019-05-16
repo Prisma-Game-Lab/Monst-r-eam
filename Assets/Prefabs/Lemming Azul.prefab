@@ -217,8 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71f3c9910e1e814b830b12e382dfc3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 380
-  ForwardAngulation: 0
+  jumpforce: 8
   FloorDetectionRayDistance: 0.05
   tempJumpSound: {fileID: 0}
 --- !u!95 &3365049459158327321

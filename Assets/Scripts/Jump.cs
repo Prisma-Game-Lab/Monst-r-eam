@@ -12,11 +12,11 @@ public class Jump : MonoBehaviour
     private HorizontalMovement hm;
     private Animator anim;
 
-    public float jumpforce = 600f;
+    public float jumpforce = 0.625f;
 
-    [Range(0.0f,90.0f)]
-    [Tooltip("O angulo que determina o quanto o bixin pula pra frente num pulo. Medido a partir do eixo y, ou seja: 0 é puramente pra cima, 90 é puramente pra frente")]
-    public float ForwardAngulation = 0.0f;
+    //[Range(0.0f,90.0f)]
+    //[Tooltip("O angulo que determina o quanto o bixin pula pra frente num pulo. Medido a partir do eixo y, ou seja: 0 é puramente pra cima, 90 é puramente pra frente")]
+    //public float ForwardAngulation = 0.0f;
 
     public float FloorDetectionRayDistance = 0.05f;
 
@@ -44,6 +44,15 @@ public class Jump : MonoBehaviour
         
         //seta pra true se bixin está caindo, false cc
         anim.SetBool("Fall", rd.velocity.y <= -0.1f);
+
+    }
+
+    void FixedUpdate()
+    {
+        if(PlayerInput.IsPressed())
+        {
+            TryToJump();
+        }
     }
 
     private void TryToJump()
@@ -58,14 +67,30 @@ public class Jump : MonoBehaviour
         if((rd.velocity.y <= 0.1f ) && hit.collider != null)
         {
             //o ângulo em radianos
-            float angle = ForwardAngulation * Mathf.Deg2Rad;
+            //float angle = ForwardAngulation * Mathf.Deg2Rad;
             
+            //angulação não está mais sendo usado
+
             //estamos usando add force, por hora. Por enquanto tem ido bem
             //usa angulação para direcionar o pulo mais pra frente
             //precisa saber pra qual lado estamos andando!
-            float fx = hm.facingRight ? jumpforce * Mathf.Sin(angle) : jumpforce * -Mathf.Sin(angle);
-            float fy = jumpforce * Mathf.Cos(angle);
-            rd.AddForce(new Vector2(fx, fy), ForceMode2D.Force);
+            // float fx = hm.facingRight ? jumpforce * Mathf.Sin(angle) : jumpforce * -Mathf.Sin(angle);
+            // float fy = jumpforce * Mathf.Cos(angle);
+            // rd.AddForce(new Vector2(fx, fy), ForceMode2D.Force);
+
+            // if(bgsfgsdf)
+            // {
+            //     float jvalue = 380f;
+            //     float fx = hm.facingRight ? jvalue * Mathf.Sin(angle) : jvalue * -Mathf.Sin(angle);
+            //     float fy = jvalue * Mathf.Cos(angle);
+            //     rd.AddForce(new Vector2(fx, fy), ForceMode2D.Force);
+    
+            // }
+           
+            rd.velocity = new Vector2(rd.velocity.x, jumpforce);
+            
+            
+            
 
             //seta anim do pul0
             anim.SetBool("Fall", false);
