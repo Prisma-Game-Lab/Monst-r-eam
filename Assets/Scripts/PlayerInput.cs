@@ -8,8 +8,12 @@ using UnityEngine;
     as funcionalidades de interação do jogador com a gameplay. Dessa maneira, 
     todas as variações e potenciais ajustes cross-plataforma ficam aqui em vez de
     espalhados entre vários scripts. 
-    Tudo é static, porque a ideia é ela funcionar como uma "referência global". Tipo uma intermediária
-    entre os sistemas e a classe Input do próprio Unity
+
+    a ideia original era quase tudo ser estático, pensando em funcionar como uma "referência global".
+    Porém, me arrependi dessa ideia após alguns bugs que envolviam inscritos "mortos," de cenas antigas, sendo chamados.
+    Acho que seria melhor isso funcionar como um singleton por cena... só não mudo agora pq daria trabalho consertar as referências
+    nos demais scripts
+    
 
     autores: André Mazal Krauss, 
 */
@@ -30,8 +34,9 @@ public class PlayerInput : MonoBehaviour
 
     void Awake()
     {
-        if(OnPress == null) OnPress = delegate { };
-        if(OnRelease == null) OnRelease = delegate { };
+        //toda vez que troca de cena, limpa os delegados
+        OnPress = delegate { };
+        OnRelease = delegate { };
         
     }
     void Start()
@@ -51,13 +56,28 @@ public class PlayerInput : MonoBehaviour
         {
             isPressed = true;
             PressTime = Time.time;
-            OnPress();
+            try
+            {
+                OnPress();
+            }
+            catch(Exception e)
+            {
+                Debug.Log(e);
+            }
+            
         }
 
         if(Input.GetButtonUp("Jump"))
         {
             isPressed = false;
-            OnRelease(Time.time - PressTime);
+            try
+            {
+                OnRelease(Time.time - PressTime);
+            }
+            catch(Exception e)
+            {
+                Debug.Log(e);
+            }
         }
         #endif
         
@@ -70,12 +90,26 @@ public class PlayerInput : MonoBehaviour
             {
                 isPressed = true;
                 PressTime = Time.time;
-                OnPress();
+                try
+                {
+                    OnPress();
+                }
+                catch(Exception e)
+                {
+                    Debug.Log(e);
+                }
             }
             else if(Input.touchCount > 0 && (Input.GetTouch(0).phase == TouchPhase.Ended || Input.GetTouch(0).phase == TouchPhase.Canceled))
             {
                 isPressed = false;
-                OnRelease(Time.time - PressTime);
+                try
+                {
+                    OnRelease(Time.time - PressTime);
+                }
+                catch(Exception e)
+                {
+                    Debug.Log(e);
+                }
             }
 
         #endif
