@@ -65,23 +65,27 @@ public class HorizontalMovement : MonoBehaviour
 
         int dir = facingRight ? 1 : -1;
 
+
+        //DA MANEIRA que ficou a movimentação final, não era importante o cheque pra ver estava no chão. Além disso, não poder setar
+        //a velocidade enquanto no ar agravava um bug
+
         //só seta movimentação lateral se estiver tocando no chão:
         //cheque com raycast pra ver se está grounded. Não me parece pesado demais para estar no update, o que acham? (Krauss)
         //pensei agora: será que basta checar se minha velocidade vertical é != 0? Tão simples, tão elegante!
         int layerMask = LayerMask.GetMask("Default");
-        float collsize = (coll2d.size.y / 2) * transform.lossyScale.y;
-        Vector3 rayStartingPosition = new Vector3(transform.position.x, transform.position.y - collsize, transform.position.z);
-        RaycastHit2D hit = Physics2D.Raycast(rayStartingPosition, Vector2.down, FloorDetectionRayDistance, layerMask);
+        // float collsize = (coll2d.size.y / 2) * transform.lossyScale.y;
+        // Vector3 rayStartingPosition = new Vector3(transform.position.x, transform.position.y - collsize, transform.position.z);
+        // RaycastHit2D hit = Physics2D.Raycast(rayStartingPosition, Vector2.down, FloorDetectionRayDistance, layerMask);
 
-        if(hit.collider != null)
-        {
+        // if(hit.collider != null)
+        // {
             // Move the character by finding the target velocity
             //para direito caso facing right, senão para esquerda (= direita * -1)
             Vector2 targetVelocity = new Vector2(movementSpeed * dir, rb.velocity.y);
             // And then smoothing it out and applying it to the character
             rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref m_velocity, smoothTime);
 
-        }
+        //}
         //faz um raycast na direção do movimento e vê se precisa virar de direção
         
         RaycastHit2D hit_h = Physics2D.Raycast(transform.position, dir * Vector2.right, turnOnWallDetectionDistance, layerMask);
@@ -95,6 +99,7 @@ public class HorizontalMovement : MonoBehaviour
         }
         else if(rb.velocity.x * (facingRight? 1 : -1) < 0)
         {
+            Debug.Log("else if rb.velocity.x");
             Flip();
         }
             
@@ -102,6 +107,7 @@ public class HorizontalMovement : MonoBehaviour
 
     private void Flip()
     {
+        Debug.Log("Flip");
         facingRight = !facingRight;
 
         //truquezinho pra fazer o sprite virar pro outro lado
