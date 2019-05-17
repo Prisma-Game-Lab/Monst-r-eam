@@ -702,7 +702,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: 
 --- !u!222 &1479098151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 394bdf6ca0ad82f468fc0e0736457898, type: 3}
-    m_FontSize: 104
+    m_FontSize: 82
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -909,7 +909,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Treta Tripla
+  m_Text: "Z\xE9, D\xE9d\xE9 e man\xE9"
 --- !u!222 &1627187737
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -954,8 +954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350.9, y: -176.38}
-  m_SizeDelta: {x: 93.8, y: 102.04}
+  m_AnchoredPosition: {x: -345.1, y: -170}
+  m_SizeDelta: {x: 105.5, y: 114.8}
   m_Pivot: {x: 0.5000001, y: 0.5000007}
 --- !u!114 &1633827561
 MonoBehaviour:
@@ -1030,7 +1030,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8bc346ca7d6b146448ba58e38cb68412, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f161602c0a703fe4581407e5e22ec701, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1165,8 +1165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 219.49002, y: -61.06001}
-  m_SizeDelta: {x: 235.6, y: 119}
+  m_AnchoredPosition: {x: -14, y: -88.47}
+  m_SizeDelta: {x: 140.6, y: 144.1}
   m_Pivot: {x: 0.34505337, y: 0.3860526}
 --- !u!114 &1714851498
 MonoBehaviour:
@@ -1241,9 +1241,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: edc040e3bdbd8124fa994b6817bb9a62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75f0ede575e8af2409233fc394d249be, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
