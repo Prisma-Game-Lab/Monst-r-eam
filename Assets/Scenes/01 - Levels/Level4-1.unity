@@ -603,12 +603,12 @@ PrefabInstance:
     - target: {fileID: 1187927306952880235, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.15
+      value: -7.44
       objectReference: {fileID: 0}
     - target: {fileID: 1187927306952880235, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.12
+      value: -5.89
       objectReference: {fileID: 0}
     - target: {fileID: 1187927306952880235, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
@@ -678,7 +678,7 @@ PrefabInstance:
     - target: {fileID: 1187927306952880233, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
       propertyPath: distancia
-      value: 5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 1187927306952880233, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
@@ -688,7 +688,12 @@ PrefabInstance:
     - target: {fileID: 1187927306952880233, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
       propertyPath: Velocidade
-      value: 5
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1187927306952880233, guid: f62cc428391623c4aa5284cfafa1ee1c,
+        type: 3}
+      propertyPath: invert
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1187927306952880228, guid: f62cc428391623c4aa5284cfafa1ee1c,
         type: 3}
@@ -792,7 +797,7 @@ PrefabInstance:
     - target: {fileID: 1059841543401805396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.03
+      value: -6.26
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -948,12 +953,12 @@ PrefabInstance:
     - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: Velocidade
-      value: 5
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: distancia
-      value: 10
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}

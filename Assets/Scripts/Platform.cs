@@ -122,6 +122,7 @@ public class Platform : MonoBehaviour
         Vector3 dir = Vector3.zero;
         if(Horizontal) dir += Vector3.right;
         if(Vertical) dir += Vector3.up;
+        if(invert) dir *= -1;
         Gizmos.DrawRay(transform.position, distancia * dir);
     }
 }
