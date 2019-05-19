@@ -15,9 +15,15 @@ public class Platform : MonoBehaviour
     private bool movH;
     private bool movV;
 
+    public bool invert;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (invert)
+        {
+            distancia = -distancia;
+        }
         PosX = transform.position.x;
         PosY = transform.position.y;
         MaxPosX = transform.position.x + distancia;
@@ -27,43 +33,86 @@ public class Platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Horizontal == true)
+        if(!invert) 
         {
-            if (transform.position.x >= MaxPosX)
+            if(Horizontal == true)
             {
-                movH = false;
+                if (transform.position.x >= MaxPosX)
+                {
+                    movH = false;
+                }
+                if(transform.position.x <= PosX)
+                {
+                    movH = true;
+                }
+                if(movH == true)
+                {
+                    transform.position += Vector3.right * Velocidade * Time.deltaTime;
+                }
+                else
+                {
+                    transform.position += Vector3.right * -Velocidade * Time.deltaTime;
+                }
             }
-            if(transform.position.x <= PosX)
+            if(Vertical == true)
             {
-                movH = true;
+                if (transform.position.y >= MaxPosY)
+                {
+                    movV = false;
+                }
+                if (transform.position.y <= PosY)
+                {
+                    movV = true;
+                }
+                if (movV == true)
+                {
+                    transform.position += Vector3.up * Velocidade * Time.deltaTime;
+                }
+                else
+                {
+                    transform.position += Vector3.up * -Velocidade * Time.deltaTime;
+                }
             }
-            if(movH == true)
-            {
-                transform.position += Vector3.right * Velocidade * Time.deltaTime;
-            }
-            else
-            {
-                transform.position += Vector3.right * -Velocidade * Time.deltaTime;
-            }
-            
         }
-        if(Vertical == true)
+        else 
         {
-            if (transform.position.y >= MaxPosY)
+            if(Horizontal == true)
             {
-                movV = false;
+                if (transform.position.x <= MaxPosX)
+                {
+                    movH = false;
+                }
+                if(transform.position.x >= PosX)
+                {
+                    movH = true;
+                }
+                if(movH == true)
+                {
+                    transform.position -= Vector3.right * Velocidade * Time.deltaTime;
+                }
+                else
+                {
+                    transform.position -= Vector3.right * -Velocidade * Time.deltaTime;
+                }
             }
-            if (transform.position.y <= PosY)
+            if(Vertical == true)
             {
-                movV = true;
-            }
-            if (movV == true)
-            {
-                transform.position += Vector3.up * Velocidade * Time.deltaTime;
-            }
-            else
-            {
-                transform.position += Vector3.up * -Velocidade * Time.deltaTime;
+                if (transform.position.y <= MaxPosY)
+                {
+                    movV = false;
+                }
+                if (transform.position.y >= PosY)
+                {
+                    movV = true;
+                }
+                if (movV == true)
+                {
+                    transform.position -= Vector3.up * Velocidade * Time.deltaTime;
+                }
+                else
+                {
+                    transform.position -= Vector3.up * -Velocidade * Time.deltaTime;
+                }
             }
         }
     }

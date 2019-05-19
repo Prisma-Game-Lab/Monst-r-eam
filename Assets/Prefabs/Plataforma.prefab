@@ -94,9 +94,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocidade: 3.5
-  Horizontal: 0
+  Horizontal: 1
   Vertical: 0
   distancia: 3
+  invert: 1
 --- !u!61 &1187927306952880228
 BoxCollider2D:
   m_ObjectHideFlags: 0

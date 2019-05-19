@@ -59,12 +59,6 @@ public class LevelButton : MonoBehaviour
         }
     }
 
-    //o que faz essa função? Ass: Dede
-    public void CurrentLevelOn(string name)
-    {
-       
-    }
-
     //função helper para ser chamada a partir de um botão. Seta, no SaveSystem, a pagina e num desse level para o corrente
     public void SetLevelAsCurrent()
     {
