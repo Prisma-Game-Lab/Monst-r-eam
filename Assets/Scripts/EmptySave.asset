@@ -63,3 +63,53 @@ MonoBehaviour:
       levelPage: 1
       levelNumber: 5
       cleared: 0
+  - myList:
+    - levelPoints: 0
+      levelPage: 2
+      levelNumber: 0
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 2
+      levelNumber: 1
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 2
+      levelNumber: 2
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 2
+      levelNumber: 3
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 1
+      levelNumber: 4
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 2
+      levelNumber: 5
+      cleared: 0
+  - myList:
+    - levelPoints: 0
+      levelPage: 3
+      levelNumber: 0
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 3
+      levelNumber: 1
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 3
+      levelNumber: 2
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 3
+      levelNumber: 3
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 3
+      levelNumber: 4
+      cleared: 0
+    - levelPoints: 0
+      levelPage: 3
+      levelNumber: 5
+      cleared: 0
