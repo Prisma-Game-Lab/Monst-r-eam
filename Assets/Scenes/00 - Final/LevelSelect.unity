@@ -1999,7 +1999,7 @@ MonoBehaviour:
   ButtonNext: {fileID: 1748230096}
   ButtonPrevious: {fileID: 1236109191}
   TotalStars: 
-  StarsToNextPage: 0000000000000000
+  StarsToNextPage: 00000000000000000000000000000000
 --- !u!1 &1006592382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5489,6 +5489,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 130414248}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: CountStars
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf, type: 3}
 --- !u!1001 &8436354009094726930

@@ -19,8 +19,11 @@ public class LevelManager : MonoBehaviour
     {
         //To-do: fazer voltar para mesma página que o player estava jogando
         currentPage = SaveSystem.GetInstance().currLevelPage;
+    }
+    void Update()
+    {
         //desliga todos, menos a página corrente, que deve ficar ligada
-        //Pega o valor total de estrelas de cada pagina (duvido que funcione e se funcionar vai bugar a ultima pagina)
+        //Pega o valor total de estrelas de cada pagina
         for(int i = 0; i < pagesContainers.Count;i++) 
         {
             TotalStars.Add(0);

@@ -36,7 +36,6 @@ public class LevelButton : MonoBehaviour
 
         CompletedMarker.SetActive(Completed);
 
-
         //vinny, é bom que todos eles sejam setados pra false! Senão se já estivessem todos true, não muda nada! Ass: Krauss
         //krauss, eu to ligado, eh que eu estava testando com os gameobjects desativados mesmo mas eh um bom ponto! Ass: Vinny
         Star1.SetActive(false);
