@@ -109,7 +109,6 @@ public class Jump : MonoBehaviour
             int r = (int) Random.Range(1.0f, 4.999f); //até 4.99 pq são só 4 sons
             string str = "Jump" + r.ToString();
             SoundSystem.PlaySound(str);
-            Debug.Log("I am " + this.name + "and I player a sound");
         }
     }
 
