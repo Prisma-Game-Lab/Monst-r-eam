@@ -109,9 +109,13 @@ public class SaveSystem : MonoBehaviour
     }
 
     [MenuItem("OurGame/CleanSave")]
-    static void DeleteSaveFile()
+    public static void DeleteSaveFile()
     {
        File.Delete(SavePath);
+       if(instance != null)
+       {
+           instance.pointSystem = GameObject.Instantiate(instance.emptySave);
+       }
     }
 
     //ao sair do jogo, salvar estado

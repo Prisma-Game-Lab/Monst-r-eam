@@ -96,7 +96,8 @@ public class Jump : MonoBehaviour
             anim.SetBool("Fall", false);
             anim.SetBool("Jump", true);
 
-            if(tempJumpSound) tempJumpSound.Play();
+            //if(tempJumpSound) tempJumpSound.Play();
+            SoundSystem.PlaySound("Jump");
         }
     }
 
