@@ -10,7 +10,15 @@ public class SoundSystem : MonoBehaviour
     [Header("Contra-exemplo: música do menu, gameplay, créditos. Qualquer coisa que loope")]
     [Header("Esse script funciona baseado no nome dos gameobjects filhos! NÃO MEXER NOS NOMES! Grato")]
     private static SoundSystem instance;
-    Dictionary<string, AudioSource> sounds;
+    // public static SoundSystem Instance
+    // {
+    //     get; private set;
+    // }
+    public static SoundSystem GetInstance()
+    {
+        return instance;
+    }
+    public Dictionary<string, AudioSource> sounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +26,10 @@ public class SoundSystem : MonoBehaviour
         {
             //não pode haver duas instâncias disso (singleton)
             //porém, eu deleto o outro! Fiz isso pra ser possível usar referencias pelo inspector dentro de uma mesma cena
+            Debug.Log("destroy instance");    
             GameObject.Destroy(instance.gameObject);
         }
+        Debug.Log("instance  = this" + this.gameObject.ToString());
         instance = this;
         sounds = new Dictionary<string, AudioSource>();
         for(int i = 0; i < transform.childCount; i++)

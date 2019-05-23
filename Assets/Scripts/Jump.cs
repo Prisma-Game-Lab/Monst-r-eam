@@ -20,7 +20,7 @@ public class Jump : MonoBehaviour
 
     public float FloorDetectionRayDistance = 0.05f;
 
-    public AudioSource tempJumpSound;
+    private static bool AudioIsPlaying; //usada na corotina pra bloquear vários lemming emitindo som ao mesmo tempo
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +57,7 @@ public class Jump : MonoBehaviour
 
     private void TryToJump()
     {
+        if(!this.gameObject.active) return;
         //faz raycasting pra checar se o lemming pode pular
         //TO-DO: implementar delayzinho
 
@@ -96,20 +97,35 @@ public class Jump : MonoBehaviour
             anim.SetBool("Fall", false);
             anim.SetBool("Jump", true);
 
-            MakeJumpSound();
+            StartCoroutine(MakeJumpSound());
             
         }
     }
 
-    private void MakeJumpSound()
+    private IEnumerator MakeJumpSound()
     {
-        //se eu sou o primeiro lemming, eu faço o som do pulo, aleatoriamente
-        if(transform.GetSiblingIndex() == 0)
-        {
-            int r = (int) Random.Range(1.0f, 4.999f); //até 4.99 pq são só 4 sons
-            string str = "Jump" + r.ToString();
-            SoundSystem.PlaySound(str);
-        }
+        //se já estiver tocando, esquece
+        if(AudioIsPlaying) yield return null;
+        
+        //senão, aviso que eu estou tocando o áudio agora, espero ele acabar, e desbloqueio
+        //famosa "flags" / signal / farol de código crítico
+        AudioIsPlaying = true;
+
+        Debug.Log("som:" + gameObject.name + transform.GetSiblingIndex());
+
+        //determino qual audio aleatório eu vou tocar
+        int r = (int) Random.Range(1.0f, 4.999f); //até 4.99 pq são só 4 sons
+        string str = "Jump" + r.ToString();
+        Debug.Log(SoundSystem.GetInstance());
+        Debug.Assert(SoundSystem.GetInstance().sounds.ContainsKey(str));
+        SoundSystem.PlaySound(str);
+        //espera acabar de tocar:
+        yield return new WaitUntil(() => !SoundSystem.GetInstance().sounds[str].isPlaying);
+
+        AudioIsPlaying = false;
+        yield return null;
+                
+        
     }
 
     void OnDestroy()
