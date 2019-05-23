@@ -104,9 +104,16 @@ public class Jump : MonoBehaviour
 
     private IEnumerator MakeJumpSound()
     {
-        //se já estiver tocando, esquece
-        if(AudioIsPlaying) yield return null;
         
+        
+        //se já estiver tocando, esquece
+        if(AudioIsPlaying) yield break;
+        //se eu não for a primeira criança ativa, também
+        // if(this.transform.GetSiblingIndex() != 0)
+        // {
+        //     yield break;
+        // }
+
         //senão, aviso que eu estou tocando o áudio agora, espero ele acabar, e desbloqueio
         //famosa "flags" / signal / farol de código crítico
         AudioIsPlaying = true;
