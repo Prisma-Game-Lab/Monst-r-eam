@@ -96,8 +96,20 @@ public class Jump : MonoBehaviour
             anim.SetBool("Fall", false);
             anim.SetBool("Jump", true);
 
-            //if(tempJumpSound) tempJumpSound.Play();
-            SoundSystem.PlaySound("Jump");
+            MakeJumpSound();
+            
+        }
+    }
+
+    private void MakeJumpSound()
+    {
+        //se eu sou o primeiro lemming, eu faço o som do pulo, aleatoriamente
+        if(transform.GetSiblingIndex() == 0)
+        {
+            int r = (int) Random.Range(1.0f, 4.999f); //até 4.99 pq são só 4 sons
+            string str = "Jump" + r.ToString();
+            SoundSystem.PlaySound(str);
+            Debug.Log("I am " + this.name + "and I player a sound");
         }
     }
 
