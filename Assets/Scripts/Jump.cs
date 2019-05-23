@@ -104,6 +104,6 @@ public class Jump : MonoBehaviour
     void OnDestroy()
     {
         //desinscreve as funções que eu inscrevi, evitando chamadas inválidas no futuro
-        PlayerInput.OnPress -= TryToJump;        
+        PlayerInput.OnPress -= TryToJump;
     }
 }
