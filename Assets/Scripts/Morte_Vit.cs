@@ -39,8 +39,14 @@ public class Morte_Vit : MonoBehaviour
         if(Vitoria.WinCount > 0)
         {
 			GameObject.Find("UIprefab").GetComponent<ChangeScene>().VictoryScreen();
+            
+            //toca som de ganhar a fase com tantas estrelas
+            string str = "Vitoria" + Vitoria.WinCount.ToString();
+            SoundSystem.PlaySound(str);
+
             //seta no save que a fase foi ganha, e com tantas estrelas
             SaveSystem.GetInstance().SetScoreForCurrentLevel(Vitoria.WinCount, true);
+
             
         }
         else
