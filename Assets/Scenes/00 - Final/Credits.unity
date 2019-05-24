@@ -184,7 +184,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "PROGRAMA\xC7\xC3O\r\nAndr\xE9 Mazal Krauss\r\nHugo Tonette\nPedro Menezes\r\nVin\xEDcius
     Cortat Btechs\r\n\r\nSONORIZA\xC7\xC3O\r\nJo\xE3o Gabriel Soares\r\n\r\nDIRE\xC7\xC3O\r\nAndr\xE9
-    Ruiz\r\nJo\xE3o Vitor \"Subzero\" Trindade\r\nMichelle Santiago Beadle\r"
+    Ruiz\r\nJo\xE3o \"Subzero\" Trindade\r\nMichelle Santiago Beadle\r"
 --- !u!222 &6905252
 CanvasRenderer:
   m_ObjectHideFlags: 0
