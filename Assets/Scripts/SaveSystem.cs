@@ -108,7 +108,7 @@ public class SaveSystem : MonoBehaviour
         pointSystem = GameObject.Instantiate(emptySave); 
     }
 
-    [MenuItem("OurGame/CleanSave")]
+    //[MenuItem("OurGame/CleanSave")] por algum motivo doido isso quebra a build?
     public static void DeleteSaveFile()
     {
        File.Delete(SavePath);

@@ -36,6 +36,8 @@ public class Jump : MonoBehaviour
         //function TryToJump will be called every time "button is pressed", for all platforms
         PlayerInput.OnPress += TryToJump;
         //Debug.Log("Jumps" + PlayerInput.OnPress.GetInvocationList().GetLength(0));
+
+        AudioIsPlaying = false;
     }
 
     // Update is called once per frame
@@ -133,6 +135,11 @@ public class Jump : MonoBehaviour
         yield return null;
                 
         
+    }
+
+    void OnDisable()
+    {
+        AudioIsPlaying = false;
     }
 
     void OnDestroy()
