@@ -13,12 +13,13 @@ using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
-	[Range(0, 100)] public float CountdownTime = 2;
+	[Range(0, 100)] public float CountdownTime = 3;
 
 	[SerializeField]
 	private Text CountdownText;
 
-	private float _timeLeft = 4.0f;
+	private float _textTime;
+	private int _tempTime;
 
 	private IEnumerator CountdownTimer()
 	{
@@ -30,12 +31,19 @@ public class Countdown : MonoBehaviour
 
 	private void Start()
 	{
+		_textTime = CountdownTime;
 		StartCoroutine("CountdownTimer");	// Start scene countdown
 	}
 
 	private void Update()
 	{
-		_timeLeft -= Time.unscaledDeltaTime;
-		CountdownText.text = Mathf.Round(_timeLeft).ToString();
+		_textTime -= Time.fixedDeltaTime;
+		_tempTime = Mathf.RoundToInt(_textTime);
+
+		if (_tempTime <= 0) _tempTime = 0;
+
+		CountdownText.text = _tempTime.ToString();
+		//Debug.Log(_tempTime);
 	}
+
 }

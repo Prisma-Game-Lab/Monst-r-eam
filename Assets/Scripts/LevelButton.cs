@@ -21,6 +21,9 @@ public class LevelButton : MonoBehaviour
     public int levelNumber;
 
 
+    public Button myButton;
+
+
     private void Start()
     {
         
@@ -56,6 +59,11 @@ public class LevelButton : MonoBehaviour
             Star2.SetActive(true);
             Star3.SetActive(true);
         }
+
+        myButton = GetComponent<Button>();
+        myButton.onClick.AddListener(() => SoundSystem.PlaySound("click")); 
+        //geralmente não gosto de trabalhar dessa maneira, e sim adicionando os eventos pelo inspector, o que considero mais legível e organizado. 
+        //mas dessa vez esse atalho me salvou uns 20 minutos de clicar idiotamente. Ass: Krauss
     }
 
     //função helper para ser chamada a partir de um botão. Seta, no SaveSystem, a pagina e num desse level para o corrente

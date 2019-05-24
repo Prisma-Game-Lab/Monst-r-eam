@@ -119,6 +119,8 @@ public class ChangeScene : MonoBehaviour
 			SaveSystem.GetInstance().currLevelNumber++;
 			SceneManager.LoadScene(sRest + tempLvl.ToString());
 		}
+		Morte.DeathCount = 0;
+		Vitoria.WinCount = 0;
 	}
 
 	public void UnregisterPlayerInput()
@@ -128,6 +130,8 @@ public class ChangeScene : MonoBehaviour
 
 	public void ToReloadScene()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		Morte.DeathCount = 0;
+		Vitoria.WinCount = 0;
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
 	}
 }
