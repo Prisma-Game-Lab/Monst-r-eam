@@ -18,8 +18,6 @@ public class Countdown : MonoBehaviour
 	[SerializeField]
 	private Text CountdownText;
 
-	private float _timeLeft = 4.0f;
-
 	private IEnumerator CountdownTimer()
 	{
 		Time.timeScale = 0;
@@ -33,9 +31,10 @@ public class Countdown : MonoBehaviour
 		StartCoroutine("CountdownTimer");	// Start scene countdown
 	}
 
-	private void Update()
+	private void FixedUpdate()
 	{
-		_timeLeft -= Time.unscaledDeltaTime;
-		CountdownText.text = Mathf.Round(_timeLeft).ToString();
+		CountdownTime -= Time.unscaledDeltaTime;
+		CountdownText.text = Mathf.Round(CountdownTime).ToString();
 	}
+
 }
