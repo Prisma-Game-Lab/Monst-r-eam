@@ -14,7 +14,6 @@ public class Morte_Vit : MonoBehaviour
     */
 
     public GameObject[] Lemmings;
-    public ChangeStars cs;
     private int Count;
 
     // Start is called before the first frame update
