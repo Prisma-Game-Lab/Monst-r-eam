@@ -12,7 +12,11 @@ public class LevelManager : MonoBehaviour
     [HideInInspector]
     public List<int> TotalStars;
     public List<int> StarsToNextPage;
+    [HideInInspector]
+    public List<int> aux;
     //public GameObject[] ButtonsLevels;
+    [HideInInspector]
+    public List<bool> foimaltime;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +30,18 @@ public class LevelManager : MonoBehaviour
         //Pega o valor total de estrelas de cada pagina
         for(int i = 0; i < pagesContainers.Count;i++) 
         {
-            TotalStars.Add(0);
+            if(aux.Count < 6) {
+                aux.Add(0);
+                TotalStars.Add(0);
+                foimaltime.Add(false);
+            }
             for(int j = 0; j < 6;j++) 
             {
-                TotalStars[i] += pagesContainers[i].transform.GetChild(0).gameObject.transform.GetChild(j).gameObject.GetComponent<LevelButton>().CountStars;
+                aux[i] += pagesContainers[i].transform.GetChild(0).gameObject.transform.GetChild(j).gameObject.GetComponent<LevelButton>().CountStars;
+            }
+            if(aux[i] > 0 && foimaltime[i] == false) {
+                TotalStars[i] = aux[i];
+                foimaltime[i] = true;
             }
         }
 
