@@ -18,6 +18,8 @@ public class LevelManager : MonoBehaviour
     [HideInInspector]
     public List<bool> foimaltime;
 
+    public Text TextNextLevel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class LevelManager : MonoBehaviour
                 TotalStars[i] = aux[i];
                 foimaltime[i] = true;
             }
+            TextNextLevel.text = TotalStars[currentPage]+"/"+StarsToNextPage[currentPage];
         }
 
         for(int i = 0; i < pagesContainers.Count; i++)
