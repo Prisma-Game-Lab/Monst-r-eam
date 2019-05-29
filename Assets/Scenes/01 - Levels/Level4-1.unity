@@ -1359,9 +1359,9 @@ EdgeCollider2D:
   - {x: 33.59, y: 10.59}
   - {x: 33.59, y: 7.59}
   - {x: 50.83026, y: 7.59}
-  - {x: 50.83111, y: 17.00951}
-  - {x: -5.74994, y: 16.84211}
-  - {x: -5.43004, y: 7.59}
+  - {x: 50.83111, y: 16.84032}
+  - {x: -5.77063, y: 16.84031}
+  - {x: -5.77063, y: 7.59}
   - {x: 14.41, y: 7.59}
   - {x: 14.41, y: 10.59}
   - {x: 18.59, y: 10.59}
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: 51.421165, y: 17.601267, z: 0}
+    - position: {x: 51.421165, y: 17.43032, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1473,7 +1473,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: -6, y: 7, z: 0}
+    - position: {x: -6.360633, y: 7, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -1549,8 +1549,8 @@ SpriteShapeRenderer:
   - {fileID: 21300016, guid: 44676f10276e6c449bc6e754cdbf637d, type: 3}
   - {fileID: 21300018, guid: 44676f10276e6c449bc6e754cdbf637d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 22.55773, y: 1.2983761, z: -0.006}
-    m_Extent: {x: 30.381674, y: 17.81675, z: 0.006}
+    m_Center: {x: 22.530197, y: 1.2151594, z: -0.006}
+    m_Extent: {x: 30.409203, y: 17.733532, z: 0.006}
 --- !u!4 &537731808
 Transform:
   m_ObjectHideFlags: 0
