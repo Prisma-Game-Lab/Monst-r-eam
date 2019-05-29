@@ -45,8 +45,8 @@ public class LevelManager : MonoBehaviour
                 TotalStars[i] = aux[i];
                 foimaltime[i] = true;
             }
-            TextNextLevel.text = TotalStars[currentPage]+"/"+StarsToNextPage[currentPage];
         }
+        TextNextLevel.text = TotalStars[currentPage]+"/"+StarsToNextPage[currentPage];
 
         for(int i = 0; i < pagesContainers.Count; i++)
         {
