@@ -14,6 +14,9 @@ public class Jump : MonoBehaviour
 
     public float jumpforce = 0.625f;
 
+    [Header("Public references, não mexer")]
+    public ParticleSystem jumpParticle;
+
     //[Range(0.0f,90.0f)]
     //[Tooltip("O angulo que determina o quanto o bixin pula pra frente num pulo. Medido a partir do eixo y, ou seja: 0 é puramente pra cima, 90 é puramente pra frente")]
     //public float ForwardAngulation = 0.0f;
@@ -99,7 +102,11 @@ public class Jump : MonoBehaviour
             anim.SetBool("Fall", false);
             anim.SetBool("Jump", true);
 
+            //som do pulo com corotina
             StartCoroutine(MakeJumpSound());
+
+            //particula do pulo
+            if(jumpParticle != null) jumpParticle.Play();
             
         }
     }

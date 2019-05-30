@@ -18,7 +18,7 @@ public class Morte : MonoBehaviour
             var pd = collision.gameObject.GetComponent<PlayerDeath>();
             if(pd != null) pd.KillPlayer();
 
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false); //tirei esse teste daqui, Vinny, pra fazer funcionar as partículas. Movi pro script PlayerDeath
             DeathCount++;
             Debug.Log("Perdi");
         }

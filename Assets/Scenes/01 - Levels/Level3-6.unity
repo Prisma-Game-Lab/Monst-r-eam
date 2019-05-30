@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -788,21 +788,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6224282979447808231, guid: 381d9563b98e9804d9cacd96e1224dff,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.28627452
-      objectReference: {fileID: 0}
-    - target: {fileID: 6224282979447808231, guid: 381d9563b98e9804d9cacd96e1224dff,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.48627454
-      objectReference: {fileID: 0}
-    - target: {fileID: 6224282979447808231, guid: 381d9563b98e9804d9cacd96e1224dff,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.8235295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 381d9563b98e9804d9cacd96e1224dff, type: 3}
 --- !u!1 &537731804
@@ -1456,11 +1441,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lemming
       objectReference: {fileID: 0}
-    - target: {fileID: 6536986572069004722, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6536986572069004723, guid: a76f7505ac9731c459ac9acbd360336c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1515,21 +1495,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 391599666372251321, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.97647065
-      objectReference: {fileID: 0}
-    - target: {fileID: 391599666372251321, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.08235294
-      objectReference: {fileID: 0}
-    - target: {fileID: 391599666372251321, guid: a76f7505ac9731c459ac9acbd360336c,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.2901961
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a76f7505ac9731c459ac9acbd360336c, type: 3}
@@ -2994,11 +2959,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lemming Verde
       objectReference: {fileID: 0}
-    - target: {fileID: 8463288348733562685, guid: 5bac2e0e2a558f649853f57701d83f1e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8463288348733562684, guid: 5bac2e0e2a558f649853f57701d83f1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3053,21 +3013,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072744247403426870, guid: 5bac2e0e2a558f649853f57701d83f1e,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.38431376
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072744247403426870, guid: 5bac2e0e2a558f649853f57701d83f1e,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.79215693
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072744247403426870, guid: 5bac2e0e2a558f649853f57701d83f1e,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.25490198
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bac2e0e2a558f649853f57701d83f1e, type: 3}

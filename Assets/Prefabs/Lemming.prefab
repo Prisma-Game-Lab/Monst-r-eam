@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 6536986572069004734}
   - component: {fileID: 1308579230}
   - component: {fileID: 9060445379567816263}
+  - component: {fileID: 716051802}
   m_Layer: 9
   m_Name: Lemming
   m_TagString: Player
@@ -98,7 +99,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6536986572069004722}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.598, y: -4.66, z: 0}
   m_LocalScale: {x: 0.309869, y: 0.309869, z: 1.5493448}
   m_Children:
@@ -225,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpforce: 8
+  jumpParticle: {fileID: 6918178236646110728}
   FloorDetectionRayDistance: 0.05
 --- !u!95 &9060445379567816263
 Animator:
@@ -245,6 +247,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &716051802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536986572069004722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473835cac1e7a72459926ecc521fbd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathParticle: {fileID: 6582846267824352710}
 --- !u!1 &7126977714306010531
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,11 +904,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -171.014
       objectReference: {fileID: 0}
+    - target: {fileID: 4759759807423975268, guid: be0b8f3d25346124db429693f16326d3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be0b8f3d25346124db429693f16326d3, type: 3}
 --- !u!4 &6918178236646110729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4759759807423975269, guid: be0b8f3d25346124db429693f16326d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2453439390044731756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6918178236646110728 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4759759807423975268, guid: be0b8f3d25346124db429693f16326d3,
     type: 3}
   m_PrefabInstance: {fileID: 2453439390044731756}
   m_PrefabAsset: {fileID: 0}
@@ -904,11 +930,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6536986572069004723}
     m_Modifications:
-    - target: {fileID: 7066137345328593366, guid: 199461b76ceec2246b81bcbb52ad28c5,
-        type: 3}
-      propertyPath: m_Name
-      value: DeathParticleVermelho
-      objectReference: {fileID: 0}
     - target: {fileID: 7863801837905844705, guid: 199461b76ceec2246b81bcbb52ad28c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -964,11 +985,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -181.10999
       objectReference: {fileID: 0}
+    - target: {fileID: 7066137345328593366, guid: 199461b76ceec2246b81bcbb52ad28c5,
+        type: 3}
+      propertyPath: m_Name
+      value: DeathParticleVermelho
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199042850413203550, guid: 199461b76ceec2246b81bcbb52ad28c5,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 199461b76ceec2246b81bcbb52ad28c5, type: 3}
 --- !u!4 &2799262906410460281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7863801837905844705, guid: 199461b76ceec2246b81bcbb52ad28c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5474456107834736024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6582846267824352710 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1199042850413203550, guid: 199461b76ceec2246b81bcbb52ad28c5,
     type: 3}
   m_PrefabInstance: {fileID: 5474456107834736024}
   m_PrefabAsset: {fileID: 0}

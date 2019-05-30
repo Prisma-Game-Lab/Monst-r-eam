@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 8463288348733562673}
   - component: {fileID: 3444032495843274513}
   - component: {fileID: 5942080103090795720}
+  - component: {fileID: 2118815386}
   m_Layer: 9
   m_Name: Lemming Verde
   m_TagString: Player
@@ -501,7 +502,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8463288348733562685}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.8900003, y: -3, z: 0}
   m_LocalScale: {x: 0.309869, y: 0.309869, z: 1.5493448}
   m_Children:
@@ -628,6 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpforce: 8
+  jumpParticle: {fileID: 4624916669528493524}
   FloorDetectionRayDistance: 0.05
 --- !u!95 &5942080103090795720
 Animator:
@@ -648,6 +650,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2118815386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463288348733562685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473835cac1e7a72459926ecc521fbd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathParticle: {fileID: 4548306230757817047}
 --- !u!1 &8477693437363307211
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,11 +872,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -171.014
       objectReference: {fileID: 0}
+    - target: {fileID: 4759759807423975268, guid: be0b8f3d25346124db429693f16326d3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be0b8f3d25346124db429693f16326d3, type: 3}
 --- !u!4 &4624916669528493525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4759759807423975269, guid: be0b8f3d25346124db429693f16326d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 153422994687345328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4624916669528493524 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4759759807423975268, guid: be0b8f3d25346124db429693f16326d3,
     type: 3}
   m_PrefabInstance: {fileID: 153422994687345328}
   m_PrefabAsset: {fileID: 0}
@@ -932,11 +958,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -181.10999
       objectReference: {fileID: 0}
+    - target: {fileID: 8695607645872328982, guid: 49f83ce7571ddcf428ca5cb8ad73df68,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f83ce7571ddcf428ca5cb8ad73df68, type: 3}
 --- !u!4 &4799950373150995304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 373530561170167977, guid: 49f83ce7571ddcf428ca5cb8ad73df68,
+    type: 3}
+  m_PrefabInstance: {fileID: 5166707935076150209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4548306230757817047 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8695607645872328982, guid: 49f83ce7571ddcf428ca5cb8ad73df68,
     type: 3}
   m_PrefabInstance: {fileID: 5166707935076150209}
   m_PrefabAsset: {fileID: 0}
