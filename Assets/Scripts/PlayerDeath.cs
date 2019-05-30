@@ -27,6 +27,7 @@ public class PlayerDeath : MonoBehaviour
     {
         Debug.Log("Kill Player!");
         anim.SetBool("Death", true);
+        SoundSystem.PlaySound("morte");
         if(deathParticle != null) deathParticle.Play();
         deathParticle.gameObject.transform.SetParent(null, true); //detacha do bixin e mantem a posição global
         this.gameObject.SetActive(false);
