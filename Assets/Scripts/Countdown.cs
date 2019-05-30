@@ -33,8 +33,8 @@ public class Countdown : MonoBehaviour
 		float t = 0.0f;
 		while(t < CountdownTime)
 		{
-			yield return new WaitForSecondsRealtime(0.1f);
-			t += 0.1f;
+			yield return new WaitForSecondsRealtime(0.3f);
+			t += 0.3f;
 			if(async.isDone)
 			{
 				cam.enabled = false;
@@ -42,10 +42,7 @@ public class Countdown : MonoBehaviour
 		}
 		Time.timeScale = 1;
 		Debug.Log("Countdown is over?");
-		//já acabou o countdown, deixo carregar a próxima cena
-		//async.allowSceneActivation = true;
-		//loada outra cena
-		//SceneManager.LoadScene(SaveSystem.GetInstance().currLevelString);
+		yield return new WaitUntil(() => async.isDone);
 		SceneManager.UnloadSceneAsync("Countdown");	//Unload countdown scene
 		yield break;
 		
