@@ -30,6 +30,8 @@ public class SaveSystem : MonoBehaviour
     public int currLevelPage;
     public int currLevelNumber;
 
+    public string currLevelString;
+
     private static SaveSystem instance;
     public static SaveSystem GetInstance()
     {

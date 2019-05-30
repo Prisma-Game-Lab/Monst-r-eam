@@ -21,12 +21,34 @@ public class Countdown : MonoBehaviour
 	private float _textTime;
 	private int _tempTime;
 
+	public Camera cam;
+
 	private IEnumerator CountdownTimer()
 	{
+		string str = SaveSystem.GetInstance().currLevelString;
+		AsyncOperation async = SceneManager.LoadSceneAsync(str, LoadSceneMode.Additive);
+		//async.allowSceneActivation = false;
+		Debug.Log("Game Scene is now loading");
 		Time.timeScale = 0;
-		yield return new WaitForSecondsRealtime(CountdownTime);
+		float t = 0.0f;
+		while(t < CountdownTime)
+		{
+			yield return new WaitForSecondsRealtime(0.1f);
+			t += 0.1f;
+			if(async.isDone)
+			{
+				cam.enabled = false;
+			}
+		}
 		Time.timeScale = 1;
+		Debug.Log("Countdown is over?");
+		//já acabou o countdown, deixo carregar a próxima cena
+		//async.allowSceneActivation = true;
+		//loada outra cena
+		//SceneManager.LoadScene(SaveSystem.GetInstance().currLevelString);
 		SceneManager.UnloadSceneAsync("Countdown");	//Unload countdown scene
+		yield break;
+		
 	}
 
 	private void Start()
@@ -42,6 +64,7 @@ public class Countdown : MonoBehaviour
 
 		if (_tempTime <= 0) _tempTime = 0;
 
+		Debug.Log(_tempTime.ToString());
 		CountdownText.text = _tempTime.ToString();
 		//Debug.Log(_tempTime);
 	}

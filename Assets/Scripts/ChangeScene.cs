@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 /*
  * 
@@ -67,10 +68,18 @@ public class ChangeScene : MonoBehaviour
 
 	public void ToGame(string sceneName)        // Used to initiate the game with the countdown scene together
 	{
-		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 		SelectedLevel = sceneName;
 		Debug.Log("Nome: " + SelectedLevel);
-		SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
+		
+
+		SaveSystem.GetInstance().currLevelString = sceneName;
+		SceneManager.LoadScene("Countdown", LoadSceneMode.Single);
+		//StartCoroutine(LoadYourAsyncScene(sceneName));		
+		
+		//SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+		//SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
+		
+		
 	}
 
 	public void ToPlayAgain()       // Used for the play again button
@@ -134,4 +143,20 @@ public class ChangeScene : MonoBehaviour
 		Vitoria.WinCount = 0;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
 	}
+
+	IEnumerator LoadYourAsyncScene(string SceneName)
+    {
+        // The Application loads the Scene in the background as the current Scene runs.
+        // This is particularly good for creating loading screens.
+        // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
+        // a sceneBuildIndex of 1 as shown in Build Settings.
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
 }
