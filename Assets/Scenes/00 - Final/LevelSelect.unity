@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -244,6 +244,11 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -388,6 +393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelNumber
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
@@ -587,6 +597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelNumber
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
@@ -1434,6 +1449,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level4-1
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -1804,6 +1824,11 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -2094,6 +2119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelNumber
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
@@ -3644,6 +3674,11 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -4271,6 +4306,11 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -4561,6 +4601,11 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -4705,6 +4750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelNumber
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
@@ -5383,6 +5433,11 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_Text
@@ -5677,6 +5732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level3-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593431152390, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: levelPage
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1102829594434634288, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
