@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1059841543401805399}
   - component: {fileID: 1059841543401805400}
   - component: {fileID: 1059841543401805401}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hazard
   m_TagString: Morte
   m_Icon: {fileID: 0}
@@ -74,19 +74,10 @@ SpriteShapeRenderer:
   m_Color: {r: 0.44705886, g: 0, b: 0, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites:
-  - {fileID: 21300000, guid: 6aa6b846eaad31541b6269e635499cfc, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: -9.168627, y: -7.0792637, z: -0.0005}
-    m_Extent: {x: 1.8104415, y: 0.5000875, z: 0.0005}
+    m_Center: {x: -9.168625, y: -7.0792637, z: 0}
+    m_Extent: {x: 1.8104184, y: 0.00008749962, z: 0}
 --- !u!114 &1059841543401805399
 MonoBehaviour:
   m_ObjectHideFlags: 0
