@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2057,6 +2057,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saida
       objectReference: {fileID: 0}
+    - target: {fileID: 6719070480872859879, guid: d70721dbe40be3f41b2822fc747a7df7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6719070480872859876, guid: d70721dbe40be3f41b2822fc747a7df7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2245,6 +2250,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6536986572069004723, guid: a76f7505ac9731c459ac9acbd360336c,
     type: 3}
   m_PrefabInstance: {fileID: 1043664631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1291792829
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1533358237}
+    m_Modifications:
+    - target: {fileID: 5335984843798754641, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_Name
+      value: SaidaVerdade
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c74aab57d0926c441ab921481d94586d, type: 3}
+--- !u!4 &1291792830 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5335984843798754643, guid: c74aab57d0926c441ab921481d94586d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1291792829}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1367697678
 PrefabInstance:
@@ -2697,6 +2777,7 @@ Transform:
   - {fileID: 1112018063}
   - {fileID: 776398413}
   - {fileID: 259207976}
+  - {fileID: 1291792830}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
