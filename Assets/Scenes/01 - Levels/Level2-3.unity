@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -380,7 +380,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.8100019, y: 2.0348313, z: -0.0005}
+    m_Center: {x: 2.8100019, y: 2.0348315, z: -0.0005}
     m_Extent: {x: 4.431417, y: 1.4840255, z: 0.0005}
 --- !u!4 &352169648
 Transform:
@@ -1164,7 +1164,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.8100019, y: 2.0348313, z: -0.0005}
+    m_Center: {x: 2.8100019, y: 2.0348315, z: -0.0005}
     m_Extent: {x: 4.431417, y: 1.4840255, z: 0.0005}
 --- !u!4 &1246554207
 Transform:
