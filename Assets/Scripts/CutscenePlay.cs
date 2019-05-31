@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class CutscenePlay : MonoBehaviour
 {
 	public VideoClip FinalCutscene;
+	[SerializeField]
+	private string SceneDestination;
 
 	private void Awake()
 	{
@@ -16,6 +18,6 @@ public class CutscenePlay : MonoBehaviour
 	private IEnumerator WaitVideoOver()
 	{
 		yield return new WaitForSeconds((float)FinalCutscene.length);
-		SceneManager.LoadScene("Credits", LoadSceneMode.Single);
+		SceneManager.LoadScene(SceneDestination, LoadSceneMode.Single);
 	}
 }
