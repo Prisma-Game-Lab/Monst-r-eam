@@ -2189,7 +2189,7 @@ MonoBehaviour:
   ButtonNext: {fileID: 1748230096}
   ButtonPrevious: {fileID: 1236109191}
   TotalStars: 
-  StarsToNextPage: 00000000000000000000000000000000
+  StarsToNextPage: 0f0000000f0000000f0000000f000000
   aux: 
   foimaltime: 
   TextNextLevel: {fileID: 592297074}
