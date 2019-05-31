@@ -126,8 +126,13 @@ public class ChangeScene : MonoBehaviour
 		else
 		{
 			SaveSystem.GetInstance().currLevelNumber++;
-			SceneManager.LoadScene(sRest + tempLvl.ToString());
-			SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
+
+			//esse load mudou quando eu mudei o esquema do countdown
+			SaveSystem.GetInstance().currLevelString = sRest + tempLvl.ToString(); //primeiro seto a string pro countdown loadar
+			SceneManager.LoadScene("Countdown", LoadSceneMode.Single); //depois loado só cena de countdown e ela faz o resto
+			
+			//SceneManager.LoadScene(sRest + tempLvl.ToString());
+			
 		}
 		Morte.DeathCount = 0;
 		Vitoria.WinCount = 0;
@@ -147,7 +152,9 @@ public class ChangeScene : MonoBehaviour
 	{
 		Morte.DeathCount = 0;
 		Vitoria.WinCount = 0;
+		//SaveSystem.GetInstance().CountdownDontReloadScene = true;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+		
 	}
 
 	IEnumerator LoadYourAsyncScene(string SceneName)

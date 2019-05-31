@@ -32,6 +32,9 @@ public class SaveSystem : MonoBehaviour
 
     public string currLevelString;
 
+    //usado quando o countdown de um reset, quando ele não deve descarregar a cena
+    public bool CountdownDontReloadScene;
+
     private static SaveSystem instance;
     public static SaveSystem GetInstance()
     {
