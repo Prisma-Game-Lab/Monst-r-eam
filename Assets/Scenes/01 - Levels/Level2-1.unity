@@ -165,8 +165,8 @@ EdgeCollider2D:
   - {x: -4.85406, y: -7.42304}
   - {x: -4.85406, y: -11.74467}
   - {x: 22.19842, y: -11.74467}
-  - {x: 22.19842, y: -16.65086}
-  - {x: 27.44473, y: -16.65086}
+  - {x: 22.19843, y: -15.11441}
+  - {x: 27.44473, y: -15.11441}
   - {x: 27.44473, y: -7.8535}
 --- !u!114 &30194803
 MonoBehaviour:
@@ -282,7 +282,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 28.03473, y: -17.24086, z: 0}
+    - position: {x: 28.03473, y: -15.7044115, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 21.608427, y: -17.240862, z: 0}
+    - position: {x: 21.60843, y: -15.7044115, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -421,8 +421,8 @@ SpriteShapeRenderer:
   - {fileID: 21300016, guid: 44676f10276e6c449bc6e754cdbf637d, type: 3}
   - {fileID: 21300018, guid: 44676f10276e6c449bc6e754cdbf637d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 22.835228, y: -0.036094666, z: -0.010000001}
-    m_Extent: {x: 29.797665, y: 18.723137, z: 0.010000001}
+    m_Center: {x: 22.835228, y: 0.7321291, z: -0.010000001}
+    m_Extent: {x: 29.797665, y: 17.954914, z: 0.010000001}
 --- !u!4 &30194805
 Transform:
   m_ObjectHideFlags: 0
@@ -1371,7 +1371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930049590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.11, y: -6.42, z: 0}
+  m_LocalPosition: {x: 0.09, y: -5.82, z: 0}
   m_LocalScale: {x: 0.26608402, y: 0.26608402, z: 0.26608402}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2734,12 +2734,12 @@ PrefabInstance:
     - target: {fileID: 1059841543401805396, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.36
+      value: 11.338348
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805396, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.48
+      value: 8.186368
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805396, guid: b4ff8124732cb3647b61100721d0c915,
         type: 3}
