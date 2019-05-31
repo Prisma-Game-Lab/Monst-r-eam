@@ -27,9 +27,7 @@ public class Morte_Vit : MonoBehaviour
     {
         if(Count == (Vitoria.WinCount + Morte.DeathCount)) // Compara com o numero de vitorias e derrotas
         {
-            End(); // funcao que troca de cena. // Só que não? Essa função não troca de cena... quem troca de cena é o botão Ass: Krauss
-            Vitoria.WinCount = 0; // pra nao bugar
-            Morte.DeathCount = 0; // pra nao bugar
+            End(); // funcao que faz vitoria ou derrota aparecer
             PlayerInput.Unregister();
         }
     }
@@ -44,13 +42,13 @@ public class Morte_Vit : MonoBehaviour
             SoundSystem.PlaySound(str);
 
             //seta no save que a fase foi ganha, e com tantas estrelas
-            SaveSystem.GetInstance().SetScoreForCurrentLevel(Vitoria.WinCount, true);
-
-            
+            SaveSystem.GetInstance().SetScoreForCurrentLevel(Vitoria.WinCount, true);  
         }
         else
         {
 			GameObject.Find("UIprefab").GetComponent<ChangeScene>().LoseScreen();
+            Vitoria.WinCount = 0; // pra nao bugar
+            Morte.DeathCount = 0; // pra nao bugar
 		}
     }
 }
