@@ -2900,6 +2900,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HazardMovel
       objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805397, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalPosition.x
