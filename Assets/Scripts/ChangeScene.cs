@@ -118,6 +118,7 @@ public class ChangeScene : MonoBehaviour
 		{
 			SaveSystem.GetInstance().currLevelNumber++;
 			SceneManager.LoadScene(sRest + tempLvl.ToString());
+			SceneManager.LoadScene("Countdown", LoadSceneMode.Additive);
 		}
 		Morte.DeathCount = 0;
 		Vitoria.WinCount = 0;
