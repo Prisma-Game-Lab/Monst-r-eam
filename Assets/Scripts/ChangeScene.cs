@@ -124,6 +124,11 @@ public class ChangeScene : MonoBehaviour
 		Vitoria.WinCount = 0;
 	}
 
+	public void LoadSceneNormal(string name)
+	{
+		SceneManager.LoadScene(name, LoadSceneMode.Single);
+	}
+
 	public void UnregisterPlayerInput()
 	{
 		PlayerInput.Unregister();

@@ -46,7 +46,13 @@ public class LevelManager : MonoBehaviour
                 foimaltime[i] = true;
             }
         }
-        TextNextLevel.text = TotalStars[currentPage]+"/"+StarsToNextPage[currentPage];
+        if(currentPage < 4) {
+            TextNextLevel.text = TotalStars[currentPage]+"/"+StarsToNextPage[currentPage];
+        }
+        else
+        {
+            TextNextLevel.text = "";
+        }
 
         for(int i = 0; i < pagesContainers.Count; i++)
         {
@@ -89,6 +95,11 @@ public class LevelManager : MonoBehaviour
         if(currentPage == pagesContainers.Count - 1 || TotalStars[currentPage] < StarsToNextPage[currentPage])
         {
             ButtonNext.SetActive(false);
+        }
+        if(currentPage == 4) {
+            for(int i = 0;i<6;i++) {
+                pagesContainers[currentPage].transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(false);
+            }
         }
     }
 
