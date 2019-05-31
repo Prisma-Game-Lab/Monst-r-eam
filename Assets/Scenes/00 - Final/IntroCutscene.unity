@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5901e37dc938268499712fd4ea3087d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinalCutscene: {fileID: 32900000, guid: 2af7692274c408846a634c05be6615ed, type: 3}
+  FinalCutscene: {fileID: 32900000, guid: 231c3b61b15a91a4b916ad428a73742d, type: 3}
   SceneDestination: MainMenu
 --- !u!328 &1460230465
 VideoPlayer:
