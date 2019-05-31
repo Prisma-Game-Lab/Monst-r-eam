@@ -2738,7 +2738,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3526,17 +3526,17 @@ PrefabInstance:
     - target: {fileID: 1059841543401805396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Sprites.Array.size
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -3556,7 +3556,7 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.z
-      value: -0.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -3566,12 +3566,12 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 1.449239
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.z
-      value: 0.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -3643,27 +3643,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteShape
       value: 
-      objectReference: {fileID: 11400000, guid: 1492a5db9d445294899235394d9b51e0,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805400, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.041658938
+      value: 0.09272885
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805400, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.2695465
+      value: 0.025767565
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805400, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Size.y
-      value: 2.7713318
+      value: 0.9345403
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805400, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.2033178
+      value: 1.0103879
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef8a92f81092d747b7632312d68d754, type: 3}
