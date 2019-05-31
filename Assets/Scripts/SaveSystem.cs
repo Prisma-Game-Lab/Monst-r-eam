@@ -106,6 +106,7 @@ public class SaveSystem : MonoBehaviour
     public void SetScoreForCurrentLevel(int stars, bool cleared)
     {
         pointSystem.UpdateLevel(currLevelPage, currLevelNumber, stars, cleared);
+        SaveState();
     }
 
     public void ClearState()
