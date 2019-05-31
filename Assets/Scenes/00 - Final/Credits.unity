@@ -183,8 +183,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "PROGRAMA\xC7\xC3O\r\nAndr\xE9 Mazal Krauss\r\nHugo Tonette\nPedro Menezes\r\nVin\xEDcius
-    Cortat Btechs\r\n\r\nSONORIZA\xC7\xC3O\r\nJo\xE3o Gabriel Soares\r\n\r\nDIRE\xC7\xC3O\r\nAndr\xE9
-    Ruiz\r\nJo\xE3o \"Subzero\" Trindade\r\nMichelle Santiago Beadle\r"
+    Cortat Btechs\r\n\r\nDIRE\xC7\xC3O\r\nAndr\xE9 Ruiz\r\nJo\xE3o \"Subzero\" Trindade\r\nMichelle
+    Santiago Beadle\r\n\nAGRADECIMENTOS\nLuciana Andrade"
 --- !u!222 &6905252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -430,7 +430,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "ARTE\r\nFelipe Paes Leme\r\nL\xE9on De Carvalho\r\n\r\nGAME DESIGN\r\nFernanda
-    Netto\r\nRaphael Ramos\r\nRenan da Fonte\r\n\r\nPRODU\xC7\xC3O\r\nMatheus L. Homsi\r\n"
+    Netto\r\nRaphael Ramos\r\nRenan da Fonte\r\n\r\nSONORIZA\xC7\xC3O\r\nJo\xE3o Gabriel
+    Soares\r\n\nPRODU\xC7\xC3O\r\nMatheus L. Homsi\r\n"
 --- !u!222 &633121511
 CanvasRenderer:
   m_ObjectHideFlags: 0
