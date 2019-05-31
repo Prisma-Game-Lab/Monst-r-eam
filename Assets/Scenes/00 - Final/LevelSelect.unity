@@ -3218,22 +3218,22 @@ PrefabInstance:
     - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.4
+      value: -2.1
       objectReference: {fileID: 0}
     - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14.2
+      value: -28.6
       objectReference: {fileID: 0}
     - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 115.02
+      value: 54.18
       objectReference: {fileID: 0}
     - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 115.02
+      value: 54.18
       objectReference: {fileID: 0}
     - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
@@ -3249,6 +3249,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102829593766456753, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1102829594329499598, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
@@ -3310,7 +3325,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e99a417625eeef04ea9dbd328e629c10,
+      objectReference: {fileID: 21300000, guid: cf3a5a4313274fa4bae9d558d22e323b,
         type: 3}
     - target: {fileID: 1102829593766456752, guid: 6a5599a0924e0fc45b48ee76d2e4fbbf,
         type: 3}
