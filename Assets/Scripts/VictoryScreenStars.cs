@@ -13,16 +13,13 @@ public class VictoryScreenStars : MonoBehaviour
         Star1.SetActive(false);
         Star2.SetActive(false);
         Star3.SetActive(false);
-        if(Vitoria.WinCount == 1) {
+        if(Vitoria.ZeVit) {
             Star1.SetActive(true);
         }
-        if(Vitoria.WinCount == 2) {
-            Star1.SetActive(true);
+        if(Vitoria.DedeVit) {
             Star2.SetActive(true);
         }
-        if(Vitoria.WinCount == 3) {
-            Star1.SetActive(true);
-            Star2.SetActive(true);
+        if(Vitoria.ManeVit) {
             Star3.SetActive(true);
         }
         Debug.Log(Vitoria.WinCount);

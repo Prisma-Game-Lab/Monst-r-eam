@@ -10,17 +10,39 @@ public class Morte : MonoBehaviour
        Autores: Vinny
     */
     public static int DeathCount = 0;
+    public static bool ZeMorto;
+    public static bool DedeMorto;
+    public static bool ManeMorto;
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "ZeTag")
         {
             var pd = collision.gameObject.GetComponent<PlayerDeath>();
             if(pd != null) pd.KillPlayer();
-
-            //collision.gameObject.SetActive(false); //tirei esse teste daqui, Vinny, pra fazer funcionar as partículas. Movi pro script PlayerDeath
+            ZeMorto = true;
+            Vitoria.ZeVit = false;
             DeathCount++;
-            Debug.Log("Perdi");
+            Debug.Log("ZePerdi");
+        }
+        if (collision.gameObject.tag == "DedeTag")
+        {
+            var pd = collision.gameObject.GetComponent<PlayerDeath>();
+            if(pd != null) pd.KillPlayer();
+            DedeMorto = true;
+            Vitoria.DedeVit = false;
+            DeathCount++;
+            Debug.Log("DedePerdi");
+        }
+        if (collision.gameObject.tag == "ManeTag")
+        {
+            var pd = collision.gameObject.GetComponent<PlayerDeath>();
+            if(pd != null) pd.KillPlayer();
+            ManeMorto = true;
+            Vitoria.ManeVit = false;
+            DeathCount++;
+            Debug.Log("ManePerdi");
         }
     }
 }

@@ -9,6 +9,9 @@ TagManager:
   - Morte
   - Vitoria
   - PauseMenu
+  - ZeTag
+  - DedeTag
+  - ManeTag
   layers:
   - Default
   - TransparentFX

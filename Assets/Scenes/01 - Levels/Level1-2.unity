@@ -746,7 +746,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.8100019, y: 2.0348313, z: -0.0005}
+    m_Center: {x: 2.8100019, y: 2.0348315, z: -0.0005}
     m_Extent: {x: 4.431417, y: 1.4840255, z: 0.0005}
 --- !u!4 &713716843
 Transform:
@@ -2001,7 +2001,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.8100019, y: 2.0348313, z: -0.0005}
+    m_Center: {x: 2.8100019, y: 2.0348315, z: -0.0005}
     m_Extent: {x: 4.431417, y: 1.4840255, z: 0.0005}
 --- !u!4 &1209184291
 Transform:
@@ -2126,7 +2126,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.8100019, y: 2.0348313, z: -0.0005}
+    m_Center: {x: 2.8100019, y: 2.0348315, z: -0.0005}
     m_Extent: {x: 4.431417, y: 1.4840255, z: 0.0005}
 --- !u!4 &1359546332
 Transform:
@@ -2952,7 +2952,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.8100019, y: 2.0348313, z: -0.0005}
+    m_Center: {x: 2.8100019, y: 2.0348315, z: -0.0005}
     m_Extent: {x: 4.431417, y: 1.4840255, z: 0.0005}
 --- !u!4 &1735964331
 Transform:

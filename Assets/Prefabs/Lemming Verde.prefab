@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 2118815386}
   m_Layer: 9
   m_Name: Lemming Verde
-  m_TagString: Player
+  m_TagString: DedeTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

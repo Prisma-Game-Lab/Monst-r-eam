@@ -11,13 +11,33 @@ public class Vitoria : MonoBehaviour
     */
 
     public static int WinCount = 0;
+    public static bool ZeVit;
+    public static bool DedeVit;
+    public static bool ManeVit;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "ZeTag")
         {
-            //queremos destruir ou só desativar?
             collider.gameObject.SetActive(false);
+            ZeVit = true;
+            Morte.ZeMorto = false;
+            WinCount++;
+            Debug.Log("Ganhei");
+        }
+        if (collider.gameObject.tag == "DedeTag")
+        {
+            collider.gameObject.SetActive(false);
+            DedeVit = true;
+            Morte.DedeMorto = false;
+            WinCount++;
+            Debug.Log("Ganhei");
+        }
+        if (collider.gameObject.tag == "ManeTag")
+        {
+            collider.gameObject.SetActive(false);
+            ManeVit = true;
+            Morte.ManeMorto = false;
             WinCount++;
             Debug.Log("Ganhei");
         }
