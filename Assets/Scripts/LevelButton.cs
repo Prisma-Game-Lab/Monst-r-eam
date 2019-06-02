@@ -11,7 +11,10 @@ public class LevelButton : MonoBehaviour
     public GameObject Star3;
     public GameObject CompletedMarker;
     public bool Completed;
-    public bool CurrentLevel; //acho que isso caiu em desuso com as mudanças que eu fiz. Ass. Krauss
+
+    private bool ZeStar;
+    private bool DedeStar;
+    private bool ManeStar;
     public int CountStars;
 
     [Header("O numero da pagina e da do level associados a esse botão!")]
@@ -35,15 +38,10 @@ public class LevelButton : MonoBehaviour
         CountStars = level.LevelPoints;
         Completed = level.cleared;
 
-        //pega alguma outra coisa do save? Nome da cena? Nome da cena?
-
-        CompletedMarker.SetActive(Completed);
-
-        //vinny, é bom que todos eles sejam setados pra false! Senão se já estivessem todos true, não muda nada! Ass: Krauss
-        //krauss, eu to ligado, eh que eu estava testando com os gameobjects desativados mesmo mas eh um bom ponto! Ass: Vinny
         Star1.SetActive(false);
         Star2.SetActive(false);
         Star3.SetActive(false);
+        // -----------------------Krauss deleta isso quando voce acabr o savesystem----------------------------------
         if(CountStars == 1)
         {
             Star1.SetActive(true);
@@ -57,6 +55,16 @@ public class LevelButton : MonoBehaviour
         {
             Star1.SetActive(true);
             Star2.SetActive(true);
+            Star3.SetActive(true);
+        }
+        // --------------------------Deleta ate aqui --------------------------------------------------------------------
+        if(ZeStar) {
+            Star1.SetActive(true);
+        }
+        if(DedeStar) {
+            Star2.SetActive(true);
+        }
+        if(ManeStar) {
             Star3.SetActive(true);
         }
 
