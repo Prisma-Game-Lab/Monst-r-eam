@@ -103,9 +103,9 @@ public class SaveSystem : MonoBehaviour
     }
 
     //função helper pra setar score do level corrente. Só pra evitar gets/sets bobos
-    public void SetScoreForCurrentLevel(int stars, bool cleared)
+    public void SetScoreForCurrentLevel(int stars, bool cleared, bool[] charsSaved)
     {
-        pointSystem.UpdateLevel(currLevelPage, currLevelNumber, stars, cleared);
+        pointSystem.UpdateLevel(currLevelPage, currLevelNumber, stars, cleared, charsSaved);
         SaveState();
     }
 

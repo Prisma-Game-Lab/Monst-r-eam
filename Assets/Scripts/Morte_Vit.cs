@@ -42,7 +42,7 @@ public class Morte_Vit : MonoBehaviour
             SoundSystem.PlaySound(str);
 
             //seta no save que a fase foi ganha, e com tantas estrelas
-            SaveSystem.GetInstance().SetScoreForCurrentLevel(Vitoria.WinCount, true);  
+            SaveSystem.GetInstance().SetScoreForCurrentLevel(Vitoria.WinCount, true, new bool[]{Vitoria.ZeVit, Vitoria.DedeVit, Vitoria.ManeVit });  
         }
         else
         {

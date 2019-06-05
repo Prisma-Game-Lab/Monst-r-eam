@@ -38,26 +38,15 @@ public class LevelButton : MonoBehaviour
         CountStars = level.LevelPoints;
         Completed = level.cleared;
 
+        //pega infos de quem passou vivo no save system
+        ZeStar = level.charSaved[0];
+        DedeStar = level.charSaved[1];
+        ManeStar = level.charSaved[2];
+
         Star1.SetActive(false);
         Star2.SetActive(false);
         Star3.SetActive(false);
-        // -----------------------Krauss deleta isso quando voce acabr o savesystem----------------------------------
-        if(CountStars == 1)
-        {
-            Star1.SetActive(true);
-        }
-        if (CountStars == 2)
-        {
-            Star1.SetActive(true);
-            Star2.SetActive(true);
-        }
-        if (CountStars == 3)
-        {
-            Star1.SetActive(true);
-            Star2.SetActive(true);
-            Star3.SetActive(true);
-        }
-        // --------------------------Deleta ate aqui --------------------------------------------------------------------
+        
         if(ZeStar) {
             Star1.SetActive(true);
         }

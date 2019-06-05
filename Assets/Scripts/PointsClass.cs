@@ -23,6 +23,9 @@ public class PointsClass
 			}
 		}
 	}
+
+	public bool[] charSaved = new bool[3];
+
 	public int levelPage;
 	public int levelNumber;
 	public bool cleared; // meio redudante, dado que já daria pra ver pelo número de estrelas

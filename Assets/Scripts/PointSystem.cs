@@ -39,11 +39,15 @@ public class PointSystem : ScriptableObject
 	public List<ListWrapper> PointsList;
 
 	// This function Adds a level or Update an existing one
-	public void UpdateLevel(int levelPage, int levelNumber, int newLevelPoint, bool newLevelCleared)
+	public void UpdateLevel(int levelPage, int levelNumber, int newLevelPoint, bool newLevelCleared, bool[] newCharSaved)
 	{
 		// Check if the points are correct
 		int currPoints = GetLevelPoints(levelPage, levelNumber);
-		if(newLevelPoint <= currPoints)
+		//esse <= vs < decide se o jogo é "conservador" ou "sempre atualizado" em relação à quais personagens ele mostra pro score
+		//ele troca, na pontuação mostrada, uma run com ze e dedé por uma run com zé e mané? 
+		//SIM => '<'
+		//NÃO => '<='
+		if(newLevelPoint < currPoints)
 		{
 			return;
 		}
@@ -59,6 +63,12 @@ public class PointSystem : ScriptableObject
 				
 				PointsList[levelPage][levelNumber].cleared = newLevelCleared;
 				PointsList[levelPage][levelNumber].LevelPoints = newLevelCleared ? newLevelPoint : 0;
+				//atualiza relação de bixins salvos
+				for(int i = 0; i < 3; i++)
+				{
+					PointsList[levelPage][levelNumber].charSaved[i] = newCharSaved[i];
+				}
+				
 			}
 			else
 			{

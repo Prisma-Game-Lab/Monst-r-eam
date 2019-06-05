@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointSystem: {fileID: 0}
   emptySave: {fileID: 11400000, guid: 8dbeb0aa36ccf3b4096484d966e6c746, type: 2}
-  saveFileName: save
   currLevelPage: 0
   currLevelNumber: 0
+  currLevelString: 
+  CountdownDontReloadScene: 0
