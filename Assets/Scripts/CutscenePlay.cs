@@ -15,9 +15,20 @@ public class CutscenePlay : MonoBehaviour
 		StartCoroutine(WaitVideoOver());
 	}
 
+	private void Update()
+	{
+		if (PlayerInput.IsPressed() || Input.GetKeyDown(KeyCode.Space))
+			GoToNextScene(SceneDestination);
+	}
+
 	private IEnumerator WaitVideoOver()
 	{
 		yield return new WaitForSeconds((float)FinalCutscene.length);
-		SceneManager.LoadScene(SceneDestination, LoadSceneMode.Single);
+		GoToNextScene(SceneDestination);
+	}
+	
+	private void GoToNextScene (string s)
+	{
+		SceneManager.LoadScene(s, LoadSceneMode.Single);
 	}
 }
