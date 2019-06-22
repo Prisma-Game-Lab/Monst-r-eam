@@ -138,6 +138,7 @@ public class ChangeScene : MonoBehaviour
 		Vitoria.WinCount = 0;
 	}
 
+	//essa função ainda é usada em algum lugar? Ela me parece redundante com a ToLoadScene, acima. Tem algum caso em que faça diferença? Ass: Krauss
 	public void LoadSceneNormal(string name)
 	{
 		SceneManager.LoadScene(name, LoadSceneMode.Single);
