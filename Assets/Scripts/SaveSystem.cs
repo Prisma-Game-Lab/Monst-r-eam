@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +17,9 @@ public class SaveSystem : MonoBehaviour
     [HideInInspector] //deve ficar escondido, só tiro enquanto programo, se eu esquecer podem por de volta pfv
     public PointSystem pointSystem;
     public PointSystem emptySave;
+
+    //a versão corrente do save, para podermos testar e tratar versões antigas
+    public static float saveVersion = 1.0f;
     
     private static string saveFileName = "save";
     private static string SavePath
@@ -23,6 +27,15 @@ public class SaveSystem : MonoBehaviour
         get
         {
             return Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
+        }
+    }
+
+    private static string versionSaveName = "version";
+    private static string VersionSavePath
+    {
+        get
+        {
+            return Path.Combine(Application.persistentDataPath, versionSaveName + ".ver");
         }
     }
 
@@ -76,30 +89,86 @@ public class SaveSystem : MonoBehaviour
 
     public void SaveState()
     {
-        string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
+        //string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
         string json_ps = JsonUtility.ToJson(pointSystem);
-        using (StreamWriter streamWriter = File.CreateText (path))
+        byte[] buffer = Encoding.UTF8.GetBytes(json_ps);
+        for(int i = 0; i < buffer.Length; i++)
         {
-            streamWriter.Write (json_ps);
+            buffer[i] = (Byte)((~buffer[i]) & 0xFF); //faço um simples not. Não é seguro, mas é o suficiente pra ninguém editar na mão o arquivo 
         }
+        try
+        {
+            File.WriteAllBytes(SavePath, buffer);
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("Unable to write to savefile");
+        }
+        
+        //registra versão atual do save
+        using (StreamWriter streamWriter = File.CreateText (VersionSavePath))
+        {
+            streamWriter.Write (saveVersion.ToString());
+        }
+
+    }
+
+    private bool ValidateOldSave()
+    {
+        Debug.LogWarning("Updating old save files was not yet implemented");
+        return false;
     }
 
     //retorna true se conseguiu ler, senão false
     public bool LoadState()
     {
-        string path = Path.Combine(Application.persistentDataPath, saveFileName + ".dat");
+        string path = SavePath;
+        string versionPath = VersionSavePath;
         //checar se existe save
-        if(!File.Exists(path))
+        if(!File.Exists(path) || !File.Exists(versionPath))
 		{
 			return false;
 		}
-        using (StreamReader streamReader = File.OpenText (path))
+        
+        //verifica versão do save        
+        using (StreamReader streamReader = File.OpenText (versionPath))
         {
-            pointSystem = ScriptableObject.CreateInstance<PointSystem>();
-            string jsonString = streamReader.ReadToEnd ();
-            JsonUtility.FromJsonOverwrite(jsonString, pointSystem);
+            string str = streamReader.ReadToEnd ();
+            try
+            {
+                float ver = float.Parse(str);
+                if (ver < saveVersion)
+                {
+                    //versão do save desatualizada
+                    Debug.LogWarning("Warning: old save version");
+                    return ValidateOldSave();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning("Warning: invalid save-version format" + e.Message);
+                return ValidateOldSave();
+            }
         }
-        return true;
+       
+        try
+        {
+            byte[] buffer = File.ReadAllBytes(path);
+            for(int i = 0; i < buffer.Length; i++)
+            {
+                buffer[i] = (Byte)((~buffer[i]) & 0xFF); //faço um simples not. Não é seguro, mas é o suficiente pra ninguém editar na mão o arquivo 
+            }
+            string jsonString = Encoding.UTF8.GetString(buffer);
+            pointSystem = ScriptableObject.CreateInstance<PointSystem>();
+            JsonUtility.FromJsonOverwrite(jsonString, pointSystem);
+            return true;
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("Unable to load savefile " + e.Message);
+            return false;
+        }
+
     }
 
     //função helper pra setar score do level corrente. Só pra evitar gets/sets bobos
@@ -117,10 +186,18 @@ public class SaveSystem : MonoBehaviour
     //[MenuItem("OurGame/CleanSave")] por algum motivo doido isso quebra a build?
     public static void DeleteSaveFile()
     {
-       File.Delete(SavePath);
-       if(instance != null)
+       try
        {
-           instance.pointSystem = GameObject.Instantiate(instance.emptySave);
+            File.Delete(SavePath);
+            File.Delete(VersionSavePath);
+            if(instance != null)
+            {
+                instance.pointSystem = GameObject.Instantiate(instance.emptySave);
+            }
+       }
+       catch(Exception e)
+       {
+           Debug.LogWarning("Could not delete file:" + e.Message);
        }
     }
 
