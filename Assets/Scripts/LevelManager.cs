@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public List<bool> foimaltime;
 
     public Text TextNextLevel;
+    public GameObject Cadeado;
 
     // Start is called before the first frame update
     void Start()
@@ -99,6 +100,7 @@ public class LevelManager : MonoBehaviour
         if(currentPage == 4) {
             for(int i = 0;i<6;i++) {
                 pagesContainers[currentPage].transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(false);
+                Cadeado.SetActive(false);
             }
         }
     }
