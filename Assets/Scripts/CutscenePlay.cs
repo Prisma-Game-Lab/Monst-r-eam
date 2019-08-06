@@ -17,8 +17,9 @@ public class CutscenePlay : MonoBehaviour
 
 	private void Update()
 	{
-		if (PlayerInput.IsPressed() || Input.GetKeyDown(KeyCode.Space))
+		if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Space)) {
 			GoToNextScene(SceneDestination);
+		}
 	}
 
 	private IEnumerator WaitVideoOver()
