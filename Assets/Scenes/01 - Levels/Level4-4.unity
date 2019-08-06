@@ -646,7 +646,7 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Sprites.Array.size
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -661,27 +661,27 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: 0
+      value: -0.024985254
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.z
-      value: -0.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 0.5
+      value: 0.47501475
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 1.449239
+      value: 0.4425338
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.z
-      value: 0.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -704,6 +704,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.y
+      value: 0.007495463
+      objectReference: {fileID: 0}
     - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: distancia
@@ -718,8 +723,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteShape
       value: 
-      objectReference: {fileID: 11400000, guid: 1492a5db9d445294899235394d9b51e0,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805400, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Offset.x
@@ -4338,7 +4342,7 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Sprites.Array.size
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -4353,27 +4357,27 @@ PrefabInstance:
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: 0
+      value: -0.024985254
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Center.z
-      value: -0.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 0.5
+      value: 0.47501475
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 1.449239
+      value: 0.4425338
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_LocalAABB.m_Extent.z
-      value: 0.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -4396,6 +4400,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1059841543401805398, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: m_LocalAABB.m_Center.y
+      value: 0.007495463
+      objectReference: {fileID: 0}
     - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: distancia
@@ -4410,8 +4419,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteShape
       value: 
-      objectReference: {fileID: 11400000, guid: 1492a5db9d445294899235394d9b51e0,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805400, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Offset.x
