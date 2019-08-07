@@ -33,14 +33,14 @@ public class ChangeScene : MonoBehaviour
 
 	public void ToPauseMenu()       //Used to load pause menu ONLY
 	{
-		if (PauseMenuGO != null && GameUIGO != null)
+		if (PauseMenuGO != null && GameUIGO != null && SceneManager.GetActiveScene().name != "Countdown")
 		{
 			PauseMenuGO.SetActive(true);
 			GameUIGO.SetActive(false);
 			Time.timeScale = 0;
 		}
 		else
-			Debug.Log("PauseMenu and/or GameUI not present");
+			Debug.Log("PauseMenu and/or GameUI not present and/or Countdown is on");
 
 	}
 
