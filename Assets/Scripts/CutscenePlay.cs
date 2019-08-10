@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
 
 public class CutscenePlay : MonoBehaviour
 {
 	public VideoClip FinalCutscene;
 	[SerializeField]
 	private string SceneDestination;
-
 	private void Awake()
 	{
 		StartCoroutine(WaitVideoOver());
@@ -17,8 +17,10 @@ public class CutscenePlay : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Space)) {
-			GoToNextScene(SceneDestination);
+		if(SplashScreen.isFinished) {
+			if (Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Space)) {
+				GoToNextScene(SceneDestination);
+			}
 		}
 	}
 
