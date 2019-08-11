@@ -759,8 +759,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1188961184702045497}
-        m_MethodName: ExitPauseMenu
+      - m_Target: {fileID: 1188961184702045500}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -770,8 +770,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5707563665247206773}
-        m_MethodName: PlaySound
+      - m_Target: {fileID: 1188961184702045500}
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2547,7 +2547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5707563665247206773}
         m_MethodName: PlaySound
         m_Mode: 5
         m_Arguments:
@@ -2558,8 +2558,8 @@ MonoBehaviour:
           m_StringArgument: click
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: ToPlayAgain
+      - m_Target: {fileID: 1188961184702045497}
+        m_MethodName: ToReloadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3375,7 +3375,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5707563665247206773}
         m_MethodName: PlaySound
         m_Mode: 5
         m_Arguments:
@@ -3386,7 +3386,7 @@ MonoBehaviour:
           m_StringArgument: voltar
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1188961184702045497}
         m_MethodName: ToLoadScene
         m_Mode: 5
         m_Arguments:
@@ -3515,7 +3515,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5707563665247206773}
         m_MethodName: PlaySound
         m_Mode: 5
         m_Arguments:
@@ -3526,7 +3526,7 @@ MonoBehaviour:
           m_StringArgument: voltar
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1188961184702045497}
         m_MethodName: ToLoadScene
         m_Mode: 5
         m_Arguments:
@@ -4045,7 +4045,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5707563665247206773}
         m_MethodName: PlaySound
         m_Mode: 5
         m_Arguments:
@@ -4056,7 +4056,7 @@ MonoBehaviour:
           m_StringArgument: voltar
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1188961184702045497}
         m_MethodName: ToLoadScene
         m_Mode: 5
         m_Arguments:
@@ -4746,7 +4746,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5707563665247206773}
         m_MethodName: PlaySound
         m_Mode: 5
         m_Arguments:
@@ -4757,7 +4757,7 @@ MonoBehaviour:
           m_StringArgument: voltar
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1188961184702045497}
         m_MethodName: ToLoadScene
         m_Mode: 5
         m_Arguments:
