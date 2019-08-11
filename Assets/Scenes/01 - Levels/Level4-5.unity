@@ -1840,6 +1840,16 @@ PrefabInstance:
       propertyPath: m_SelectedEditorRenderState
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: distancia
+      value: 11.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Velocidade
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_SpriteShape
@@ -1859,16 +1869,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 0.6825944
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: distancia
-      value: 11.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Velocidade
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7305956429042939976, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
@@ -3248,7 +3248,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960328435}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3257,28 +3257,23 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -25.199999, y: 2.6999989}
-  - {x: -10.803032, y: 7.180188}
-  - {x: -10.802429, y: -0.9202175}
-  - {x: -7.2057467, y: -0.9133776}
-  - {x: -7.2132416, y: -1.787819}
-  - {x: -10.826891, y: -1.7951732}
-  - {x: -10.831081, y: -3.6046054}
-  - {x: -1.8000218, y: -3.615949}
-  - {x: -1.8010806, y: -4.504695}
-  - {x: 3.6188893, y: -4.502166}
-  - {x: 3.591769, y: -6.747593}
-  - {x: 6.2994313, y: -6.741792}
-  - {x: 6.306959, y: -4.5008698}
-  - {x: 11.705641, y: -4.508788}
-  - {x: 11.712479, y: -0.025142193}
-  - {x: -4.4964633, y: 0.0056347847}
-  - {x: -4.5017004, y: 0.8977169}
-  - {x: 3.5895827, y: 0.8766899}
-  - {x: 3.611456, y: 2.6737866}
-  - {x: 11.675715, y: 2.6823828}
-  - {x: 11.665355, y: 7.1961637}
-  - {x: 28.35, y: 2.6999989}
+  - {x: -13.936347, y: 9.903135}
+  - {x: -13.953507, y: 2.6953642}
+  - {x: -10.35221, y: 2.703179}
+  - {x: -10.343214, y: 3.604446}
+  - {x: -8.547746, y: 3.597281}
+  - {x: -8.558915, y: -4.504412}
+  - {x: -1.3580486, y: -4.5096774}
+  - {x: -1.339806, y: 2.697816}
+  - {x: 4.9477572, y: 2.70356}
+  - {x: 4.951405, y: -4.4971695}
+  - {x: 12.149701, y: -4.511943}
+  - {x: 12.162703, y: 3.6017022}
+  - {x: 13.959664, y: 3.5871978}
+  - {x: 13.9511, y: 2.6920815}
+  - {x: 15.750376, y: 2.6886826}
+  - {x: 15.749635, y: 9.887032}
+  - {x: -13.937387, y: 9.911001}
 --- !u!19719996 &1960328438
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -3286,7 +3281,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960328435}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

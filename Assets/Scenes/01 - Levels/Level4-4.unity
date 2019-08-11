@@ -464,6 +464,16 @@ PrefabInstance:
       propertyPath: m_SelectedEditorRenderState
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: distancia
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Velocidade
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_SpriteShape
@@ -488,16 +498,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 1.2033178
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: distancia
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Velocidade
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef8a92f81092d747b7632312d68d754, type: 3}
@@ -1632,7 +1632,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545435521}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1641,28 +1641,31 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -25.199999, y: 2.6999989}
-  - {x: -10.803032, y: 7.180188}
-  - {x: -10.802429, y: -0.9202175}
-  - {x: -7.2057467, y: -0.9133776}
-  - {x: -7.2132416, y: -1.787819}
-  - {x: -10.826891, y: -1.7951732}
-  - {x: -10.831081, y: -3.6046054}
-  - {x: -1.8000218, y: -3.615949}
-  - {x: -1.8010806, y: -4.504695}
-  - {x: 3.6188893, y: -4.502166}
-  - {x: 3.591769, y: -6.747593}
-  - {x: 6.2994313, y: -6.741792}
-  - {x: 6.306959, y: -4.5008698}
-  - {x: 11.705641, y: -4.508788}
-  - {x: 11.712479, y: -0.025142193}
-  - {x: -4.4964633, y: 0.0056347847}
-  - {x: -4.5017004, y: 0.8977169}
-  - {x: 3.5895827, y: 0.8766899}
-  - {x: 3.611456, y: 2.6737866}
-  - {x: 11.675715, y: 2.6823828}
-  - {x: 11.665355, y: 7.1961637}
-  - {x: 28.35, y: 2.6999989}
+  - {x: -9.89477, y: 8.99911}
+  - {x: -9.901128, y: 5.3961515}
+  - {x: -6.3064528, y: 5.4030743}
+  - {x: -6.305484, y: 4.4918485}
+  - {x: 0.0036061853, y: 4.5079627}
+  - {x: -0.0028751045, y: 2.6945333}
+  - {x: 1.7971897, y: 2.694158}
+  - {x: 1.8083172, y: 4.4982324}
+  - {x: 8.106895, y: 4.5002093}
+  - {x: 8.100962, y: 1.7992399}
+  - {x: -9.900768, y: 1.7979418}
+  - {x: -9.912275, y: -2.7010903}
+  - {x: -7.1922145, y: -2.7097158}
+  - {x: -7.198047, y: -4.5015063}
+  - {x: -5.3966103, y: -4.4995365}
+  - {x: -5.390305, y: -2.6835933}
+  - {x: 0.89713895, y: -2.703189}
+  - {x: 0.90115345, y: -4.519042}
+  - {x: 2.7082438, y: -4.511667}
+  - {x: 2.7058697, y: -2.6952038}
+  - {x: 6.312175, y: -2.7019958}
+  - {x: 6.313204, y: -3.611487}
+  - {x: 12.60381, y: -3.6084838}
+  - {x: 12.605475, y: 9.017351}
+  - {x: -9.884855, y: 9.02002}
 --- !u!19719996 &545435524
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -1670,7 +1673,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545435521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -27075,7 +27078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231172495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: -5.22, z: 0}
+  m_LocalPosition: {x: 0.64, y: -5.22, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.26608402}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28429,6 +28432,16 @@ PrefabInstance:
       propertyPath: m_SelectedEditorRenderState
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: distancia
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Velocidade
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_SpriteShape
@@ -28453,16 +28466,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 1.2033178
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: distancia
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Velocidade
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef8a92f81092d747b7632312d68d754, type: 3}
