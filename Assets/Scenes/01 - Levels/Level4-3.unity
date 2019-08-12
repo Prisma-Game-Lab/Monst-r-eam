@@ -20771,6 +20771,31 @@ PrefabInstance:
       propertyPath: m_LocalAABB.m_Center.y
       value: 0.007495463
       objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: distancia
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: invert
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Velocidade
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.size
@@ -21071,31 +21096,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.9200469
       objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Horizontal
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Vertical
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: distancia
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: invert
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Velocidade
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef8a92f81092d747b7632312d68d754, type: 3}
 --- !u!4 &1083415006 stripped
@@ -21229,22 +21229,27 @@ PrefabInstance:
     - target: {fileID: 4966983926639554690, guid: 04e4781721ef2214e838ef7f34b480a0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 77.6001
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4966983926639554690, guid: 04e4781721ef2214e838ef7f34b480a0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -71.9895
+      value: -56.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188961183526635426, guid: 04e4781721ef2214e838ef7f34b480a0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 77.2
       objectReference: {fileID: 0}
     - target: {fileID: 1188961184503860682, guid: 04e4781721ef2214e838ef7f34b480a0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -97.6001
+      value: -58.3
       objectReference: {fileID: 0}
     - target: {fileID: 1188961184503860682, guid: 04e4781721ef2214e838ef7f34b480a0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -69.599976
+      value: -53.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04e4781721ef2214e838ef7f34b480a0, type: 3}
@@ -21758,6 +21763,31 @@ PrefabInstance:
       propertyPath: m_LocalAABB.m_Center.y
       value: 0.007495463
       objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: distancia
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: invert
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
+        type: 3}
+      propertyPath: Velocidade
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1059841543401805399, guid: 0ef8a92f81092d747b7632312d68d754,
         type: 3}
       propertyPath: m_Spline.m_ControlPoints.Array.size
@@ -22057,31 +22087,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.9200469
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Horizontal
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Vertical
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: distancia
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: invert
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323144065716073396, guid: 0ef8a92f81092d747b7632312d68d754,
-        type: 3}
-      propertyPath: Velocidade
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef8a92f81092d747b7632312d68d754, type: 3}
