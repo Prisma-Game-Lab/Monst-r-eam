@@ -193,6 +193,11 @@ public class SaveSystem : MonoBehaviour
             if(instance != null)
             {
                 instance.pointSystem = GameObject.Instantiate(instance.emptySave);
+                
+                //seto a página e level correntes para a primeira
+                instance.currLevelPage = 0;
+                instance.currLevelNumber = 0;
+
             }
        }
        catch(Exception e)
